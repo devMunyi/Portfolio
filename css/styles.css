@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .wrapper {
   background-image: url("../img/shapes-mobile-bg.png");
   min-height: 100vh;
   background-position: center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -13,16 +15,14 @@
   align-items: center;
 }
 
-
 .logo {
   display: flex;
   margin-left: 24px;
-  font-family: Poppins;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
   top: 10px;
   left: 12px;
 }
@@ -37,7 +37,7 @@
 .hamburger-icon {
   width: 100%;
   height: 5px;
-  background-color: #ACB7C3;
+  background-color: #acb7c3;
   margin: 6px 0;
 }
 
@@ -46,10 +46,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  color: #172B4D;
+  color: #172b4d;
   margin-left: 24px;
   margin-right: 24px;
-  font-family: Poppins;
   font-style: normal;
 }
 
@@ -63,7 +62,6 @@
   line-height: 52px;
 }
 
-
 .headline-section .flex-item2 {
   font-weight: 400;
 }
@@ -72,27 +70,22 @@
   font-weight: 500;
 }
 
-.headline-section .flex-item2,
-.flex-item3 {
+.headline-section.flex-item2.flex-item3 {
   font-size: 16px;
   line-height: 24px;
 }
 
-/**Socil Media**/
+/** Socil Media **/
 .social-media {
   display: flex;
   align-items: center;
   width: 50%;
-  /* justify-content: space-between; */
-  /* list-style: none; */
 }
 
 .social-md {
   flex: 1 1 5px;
-  /* border: 2px solid goldenrod; */
 }
 
-
-.social-md:hover, .logo:hover, .menu:hover {
+.social-md:hover.logo:hover.menu:hover {
   cursor: pointer;
 }

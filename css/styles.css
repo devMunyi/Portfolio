@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+  margin:0;
+  background-color: #edeff3
+}
+
+.wrapper {
+  padding-top: 10px;
+  background-color: white;
+  border-bottom-left-radius: 75px;
+  min-height: calc(100vh - 10px);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -41,12 +53,12 @@
   color: #172b4d;
   font-style: normal;
   background-image: url("../img/shapes-mobile-bg.png");
-  min-height: calc(100vh - 10px);
+  /* min-height: calc(100vh - 10px); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-bottom-left-radius: 75px;
+ 
 }
 
 .flex-item {

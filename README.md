@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 - Run the command `npm install` to install necessary dependencies contained in the package.json file
 
 ### Test
-- To test your code locally open index.html file on browser.
+- To test your code locally open index.html file on browser. Switch/adjust your browser window size to check how the site appears on mobile view.
 
 ## Authors
 

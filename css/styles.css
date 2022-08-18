@@ -1,3 +1,104 @@
-* {
-  margin: auto 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  background-color: #edeff3;
+  min-height: calc(100vh - 10px);
+}
+
+.wrapper {
+  padding-top: 10px;
+  background-color: white;
+  border-bottom-left-radius: 75px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  margin-left: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu {
+  margin-right: 36px;
+  width: 36px;
+  top: 12px;
+  left: 4px;
+}
+
+.hamburger-icon {
+  width: 100%;
+  height: 5px;
+  background-color: #6070ff;
+  margin: 6px 0;
+}
+
+.headline-section {
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #172b4d;
+  font-style: normal;
+  background-image: url("../img/shapes-mobile-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+}
+
+.flex-item {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.headline-section .flex-item1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.headline-section .flex-item2 {
+  font-weight: 400;
+}
+
+.flex-item3 {
+  color: #7f8cff;
+}
+
+.headline-section .flex-item3 {
+  font-weight: 500;
+}
+
+.headline-section.flex-item2.flex-item3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/** Socil Media **/
+.social-media {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-left: 24px;
+}
+
+.social-md {
+  flex: 1 1 5px;
+}
+
+.menu:hover {
+  cursor: pointer;
 }

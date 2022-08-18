@@ -3,13 +3,13 @@
 body {
   margin: 0;
   background-color: #edeff3;
+  min-height: calc(100vh - 10px);
 }
 
 .wrapper {
   padding-top: 10px;
   background-color: white;
   border-bottom-left-radius: 75px;
-  min-height: calc(100vh - 10px);
 }
 
 .header {
@@ -55,6 +55,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 500px;
 }
 
 .flex-item {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  margin:0;
+  margin: 0;
   background-color: #edeff3
 }
 
@@ -24,10 +24,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
   color: #6070ff;
-  top: 10px;
-  left: 12px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -53,12 +51,10 @@ body {
   color: #172b4d;
   font-style: normal;
   background-image: url("../img/shapes-mobile-bg.png");
-  /* min-height: calc(100vh - 10px); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
- 
 }
 
 .flex-item {

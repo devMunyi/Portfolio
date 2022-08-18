@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.wrapper {
-  background-image: url("../img/shapes-mobile-bg.png");
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +16,7 @@
   color: #6070ff;
   top: 10px;
   left: 12px;
+  text-decoration: none;
 }
 
 .menu {
@@ -37,24 +29,34 @@
 .hamburger-icon {
   width: 100%;
   height: 5px;
-  background-color: #acb7c3;
+  background-color: #6070ff;
   margin: 6px 0;
 }
 
 .headline-section {
-  top: 114px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   color: #172b4d;
-  margin-left: 24px;
-  margin-right: 24px;
   font-style: normal;
+  background-image: url("../img/shapes-mobile-bg.png");
+  min-height: calc(100vh - 10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom-left-radius: 75px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .flex-item {
-  flex: 1 1 100%;
+  margin-left: 24px;
+  margin-right: 24px;
 }
+
 
 .headline-section .flex-item1 {
   font-weight: 700;
@@ -70,6 +72,10 @@
   font-weight: 500;
 }
 
+.flex-item3 {
+  color: #7f8cff;
+}
+
 .headline-section.flex-item2.flex-item3 {
   font-size: 16px;
   line-height: 24px;
@@ -77,15 +83,18 @@
 
 /** Socil Media **/
 .social-media {
+  list-style: none;
   display: flex;
   align-items: center;
   width: 50%;
+  padding-left: 24px;
 }
 
 .social-md {
   flex: 1 1 5px;
 }
 
-.social-md:hover.logo:hover.menu:hover {
+.menu:hover {
   cursor: pointer;
 }
+

@@ -1,5 +1,10 @@
-.header {
-  background-image: url("./img/header-background-mobile.svg");
+.wrapper {
+  background-image: url("../img/shapes-mobile-bg.png");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  position: relative;
 }
 
 .header {
@@ -12,8 +17,6 @@
 .logo {
   display: flex;
   margin-left: 24px;
-  /* width: 76px;
-  height: 20px; */
   font-family: Poppins;
   font-weight: 700;
   font-size: 18px;
@@ -36,4 +39,60 @@
   height: 5px;
   background-color: #ACB7C3;
   margin: 6px 0;
+}
+
+.headline-section {
+  top: 114px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #172B4D;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.flex-item {
+  flex: 1 1 100%;
+}
+
+.headline-section .flex-item1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+
+.headline-section .flex-item2 {
+  font-weight: 400;
+}
+
+.headline-section .flex-item3 {
+  font-weight: 500;
+}
+
+.headline-section .flex-item2,
+.flex-item3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/**Socil Media**/
+.social-media {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  /* justify-content: space-between; */
+  /* list-style: none; */
+}
+
+.social-md {
+  flex: 1 1 5px;
+  /* border: 2px solid goldenrod; */
+}
+
+
+.social-md:hover, .logo:hover, .menu:hover {
+  cursor: pointer;
 }

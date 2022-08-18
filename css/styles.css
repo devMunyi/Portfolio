@@ -47,16 +47,12 @@
   background-size: cover;
   position: relative;
   border-bottom-left-radius: 75px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
 }
 
 .flex-item {
   margin-left: 24px;
   margin-right: 24px;
 }
-
 
 .headline-section .flex-item1 {
   font-weight: 700;
@@ -68,12 +64,12 @@
   font-weight: 400;
 }
 
-.headline-section .flex-item3 {
-  font-weight: 500;
-}
-
 .flex-item3 {
   color: #7f8cff;
+}
+
+.headline-section .flex-item3 {
+  font-weight: 500;
 }
 
 .headline-section.flex-item2.flex-item3 {
@@ -97,4 +93,3 @@
 .menu:hover {
   cursor: pointer;
 }
-

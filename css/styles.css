@@ -121,8 +121,11 @@ body {
   padding-bottom: 25px;
 }
 
-.grid-item > p {
+.ml-16 {
   margin-left: 16px;
+}
+
+.mr-16 {
   margin-right: 16px;
 }
 
@@ -314,11 +317,6 @@ ul {
   flex-grow: 0;
 }
 
-.fa-solid {
-  color: #acb7c3;
-  font-size: 12px;
-}
-
 .connect-text {
   color: #7f8cff;
 }
@@ -327,7 +325,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 18px 20px 18px 0;
   cursor: pointer;
 }
 
@@ -375,6 +373,14 @@ hr {
 
 .active-list-item {
   cursor: auto;
+}
+
+.social-media-2 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-top: 15px;
 }
 
 /* End About Myself Section */

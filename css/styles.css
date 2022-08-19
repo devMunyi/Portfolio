@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  font-family: 'Poppins' sans-serif;
+  /* font-family: 'Poppins' sans-serif; */
   font-style: normal;
   margin: 0;
   background-color: #e5e5e5;
@@ -10,7 +10,7 @@ body {
 
 .wrapper1 {
   padding-top: 10px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom-left-radius: 75px;
 }
 
@@ -74,7 +74,6 @@ body {
   font-weight: 400;
 }
 
-
 .headline-section .flex-item3 {
   font-weight: 500;
 }
@@ -114,7 +113,7 @@ body {
 
 .grid-item {
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #fff;
   transition: 0.3s;
   width: 100%;
   border: 1px solid #dfe1e6;
@@ -122,18 +121,10 @@ body {
   padding-bottom: 25px;
 }
 
-.grid-item>p {
+.grid-item > p {
   margin-left: 16px;
   margin-right: 16px;
 }
-
-
-/* .img-container {
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  border-radius: 8px;
-} */
 
 .bg-img-container {
   margin-top: 16px;
@@ -238,7 +229,6 @@ ul {
   color: #7a869a;
 }
 
-
 .description {
   font-weight: 400;
   color: #344563;
@@ -273,7 +263,7 @@ ul {
   line-height: 24px;
   color: #396df2;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
   padding: 5px 10px;
@@ -287,7 +277,7 @@ ul {
 
 .btn:hover {
   background-color: #396df2;
-  color: white
+  color: white;
 }
 
 .cursor-pointer {
@@ -296,12 +286,9 @@ ul {
 
 /* End works section  */
 
-
 /* Begin About Myself Section */
 .about-myself {
-  /* display: flex;
-  flex-direction: column; */
-  background-color: #ffffff;
+  background-color: #fff;
   border-top-right-radius: 75px;
   padding: 100px 24px;
 }
@@ -319,7 +306,6 @@ ul {
   order: 0;
   flex-grow: 0;
 }
-
 
 .about-description {
   line-height: 24px;
@@ -346,7 +332,7 @@ ul {
 }
 
 .outer-item-left {
-  color: #000000;
+  color: #000;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -368,7 +354,7 @@ ul {
 
 .inner-item-right {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 20px;
   margin-left: 20px;
   color: #253858;
@@ -390,4 +376,5 @@ hr {
 .active-list-item {
   cursor: auto;
 }
+
 /* End About Myself Section */

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  /* font-family: 'Poppins' sans-serif; */
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin: 0;
   background-color: #e5e5e5;
@@ -72,10 +72,6 @@ body {
 
 .headline-section .flex-item2 {
   font-weight: 400;
-}
-
-.headline-section .flex-item3 {
-  font-weight: 500;
 }
 
 .headline-section.flex-item2.flex-item3 {
@@ -318,6 +314,7 @@ ul {
 }
 
 .connect-text {
+  font-weight: 500;
   color: #7f8cff;
 }
 
@@ -352,7 +349,7 @@ ul {
 
 .inner-item-right {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 20px;
   margin-left: 20px;
   color: #253858;

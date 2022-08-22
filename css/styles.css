@@ -239,9 +239,9 @@ ul {
 }
 
 .works-categories {
-  display: inline-flex;
+  /* display: inline-flex;
   justify-content: space-around;
-  margin-left: 16px;
+  margin-left: 16px; */
 }
 
 .wcat {

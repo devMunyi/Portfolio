@@ -384,20 +384,19 @@ hr {
 
 /* Begin Contact Section */
 .contact {
-  background: #6070FF;
+  background: #6070ff;
   border-top-left-radius: 75px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 50px;
 }
 
-
 .contact-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   padding-top: 103px;
 }
 
@@ -406,13 +405,12 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
 }
 
 .contact-form {
   padding-top: 50px;
 }
-
 
 .input {
   width: 100%;
@@ -426,21 +424,20 @@ hr {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .message-input {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
+  color: #b3bac5;
   height: 140px;
 }
 
-
 .contact-btn {
   padding: 12px 16px;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 8px;
   width: 140px;
   height: 48px;
@@ -452,14 +449,14 @@ hr {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .end-line {
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   margin-top: 30px;
   height: 5px;

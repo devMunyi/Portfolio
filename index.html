@@ -85,7 +85,9 @@
           <li class="wcat wcat1">javascript</li>
         </ul>
         <br />
-        <button class="btn project-view-btn cursor-pointer">See Project</button>
+        <button type="submit" class="btn project-view-btn cursor-pointer">
+          See Project
+        </button>
       </div>
       <div class="grid-item grid-item2">
         <div class="bg-img-container bg-img2"></div>
@@ -108,7 +110,9 @@
           <li class="wcat wcat1">javascript</li>
         </ul>
         <br />
-        <button class="btn project-view-btn cursor-pointer">See Project</button>
+        <button type="submit" class="btn project-view-btn cursor-pointer">
+          See Project
+        </button>
       </div>
       <div class="grid-item grid-item3">
         <div class="bg-img-container bg-img3"></div>
@@ -131,7 +135,9 @@
           <li class="wcat wcat1">javascript</li>
         </ul>
         <br />
-        <button class="btn project-view-btn cursor-pointer">See Project</button>
+        <button type="submit" class="btn project-view-btn cursor-pointer">
+          See Project
+        </button>
       </div>
       <div class="grid-item grid-item4">
         <div class="bg-img-container bg-img4"></div>
@@ -154,7 +160,9 @@
           <li class="wcat wcat1">javascript</li>
         </ul>
         <br />
-        <button class="btn project-view-btn cursor-pointer">See Project</button>
+        <button type="submit" class="btn project-view-btn cursor-pointer">
+          See Project
+        </button>
       </div>
     </section>
 
@@ -194,7 +202,9 @@
         </li>
       </ul>
 
-      <button class="btn resume-btn cursor-pointer">Get my resume</button>
+      <button type="submit" class="btn resume-btn cursor-pointer">
+        Get my resume
+      </button>
 
       <ul class="abt-cat-outer">
         <li class="outer-list active-list">
@@ -241,6 +251,64 @@
         </li>
         <!-- <hr> -->
       </ul>
+    </section>
+
+    <!--Add Contact Form -->
+    <section class="contact">
+      <h2 class="contact-title">Contact me</h2>
+
+      <p class="contact-deccription">
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
+      </p>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xnqrnpng"
+        method="post"
+      >
+        <label>
+          <input
+            class="input username-input"
+            type="text"
+            name="user_name"
+            id="user_name"
+            maxlength="30"
+            placeholder="Yeremias"
+            required
+          />
+          <br />
+        </label>
+
+        <label>
+          <input
+            class="input email-input"
+            type="email"
+            name="user_email"
+            id="user_email"
+            required
+            placeholder="natajayanj14@gmail.com"
+          />
+          <br />
+        </label>
+
+        <label>
+          <textarea
+            class="input message-input"
+            placeholder="Write your message here"
+            name="user_message"
+            id="user_message"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            required></textarea
+          ><br />
+        </label>
+
+        <button type="submit" class="contact-btn btn">Get In Touch</button>
+      </form>
+      <div class="end-line"></div>
     </section>
   </body>
 </html>

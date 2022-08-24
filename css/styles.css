@@ -19,8 +19,6 @@ ul {
   padding: 0;
 }
 
-/* End Common styles for both mobile and desktop version */
-
 .header-headline-wrapper {
   padding-top: 10px;
   background-color: #fff !important;
@@ -28,16 +26,22 @@ ul {
   border: 2px solid #fff;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.about-contact-wrapper {
+  background-color: #fff;
 }
+
+/* End Common styles for both mobile and desktop version */
 
 @media screen and (max-width: 768px) {
   .desktop-nav {
     display: none;
   }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headline-section {
@@ -426,6 +430,7 @@ hr {
   background-image: url(../img/background-contact.svg);
   background-repeat: no-repeat;
   background-position: right;
+  border-top: 1px solid #fff;
 }
 
 .contact-title {
@@ -446,7 +451,7 @@ hr {
 }
 
 .contact-form {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .input {
@@ -631,13 +636,14 @@ hr {
 
   /* Begin Contact */
   .contact {
-    border-top-left-radius: 0;
+    border-top-left-radius: 50px;
     padding-left: 320px;
     padding-right: 320px;
     padding-bottom: 100px;
     background-image: url(../img/background-contact.svg);
     background-repeat: no-repeat;
     background-position: right;
+    border-top: 1px solid #fff;
   }
 
   .contact-btn {

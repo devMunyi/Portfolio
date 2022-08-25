@@ -36,6 +36,7 @@ ul {
 
 .header-headline-wrapper {
   padding-top: 10px;
+  padding-bottom: 80px;
   background-color: var(--white-bg);
   border-bottom-left-radius: 75px;
   border: var(--white-border);
@@ -120,15 +121,10 @@ ul {
 /** Socil Media **/
 .social-media {
   list-style: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  width: 50%;
-  padding-bottom: 15px;
+  gap: 20px;
   padding-left: 24px;
-}
-
-.social-md {
-  flex: 1 1 5px;
 }
 
 .menu:hover {
@@ -163,7 +159,6 @@ ul {
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-gap: 50px;
-  margin-top: 50px;
   padding: 50px 16px;
 }
 
@@ -368,6 +363,8 @@ ul {
 .connect-text {
   font-weight: var(--font-weight-500);
   color: #7f8cff;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .abt-cat {
@@ -429,6 +426,7 @@ hr {
   display: flex;
   align-items: center;
   width: 50%;
+  gap: 10px;
   padding-bottom: 15px;
 }
 
@@ -548,9 +546,9 @@ hr {
 
   /* Begin Works Section */
   .works {
-    margin-top: 50px;
-    margin-left: 16px;
-    margin-right: 16px;
+    grid-gap: 142px;
+    margin: 142px;
+    padding: 0;
   }
 
   .project_img {
@@ -578,8 +576,7 @@ hr {
     flex-direction: row;
   }
 
-  .flex-sect,
-  .about-flex-sect {
+  .flex-sect {
     width: 50%;
   }
 
@@ -620,6 +617,22 @@ hr {
   .about-myself {
     display: flex;
     flex-direction: row;
+    padding-top: 142px;
+    padding-left: 142px;
+    padding-right: 142px;
+    gap: 37px;
+  }
+
+  .abt-cat {
+    margin-left: 15px;
+  }
+
+  .about-flex__sect__left {
+    width: 40%;
+  }
+
+  .about-flex__sect__right {
+    width: 60%;
   }
 
   .abt-cat-inner {

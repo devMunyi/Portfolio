@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /*  Begin Common styles for both mobile and desktop version  */
+:root {
+  --white-bg: #fff;
+  --white-border: 1px solid #fff;
+  --white-text: #fff;
+  --dark-text: #000;
+  --blue-text: #396df2;
+  --blue-bg: #396df2;
+  --blue-border: 1px solid#396df2;
+  --skyblue-bg: #6070ff;
+  --skyblue-text: #6070ff;
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -21,16 +36,14 @@ ul {
 
 .header-headline-wrapper {
   padding-top: 10px;
-  background-color: #fff !important;
+  background-color: var(--white-bg);
   border-bottom-left-radius: 75px;
-  border: 2px solid #fff;
+  border: var(--white-border);
 }
 
 .about-contact-wrapper {
-  background-color: #fff;
+  background-color: var(--white-bg);
 }
-
-/* End Common styles for both mobile and desktop version */
 
 @media screen and (max-width: 768px) {
   .desktop-nav {
@@ -38,6 +51,7 @@ ul {
   }
 }
 
+/* End Common styles for both mobile and desktop version */
 .header {
   display: flex;
   justify-content: space-between;
@@ -62,10 +76,10 @@ ul {
 .logo {
   display: flex;
   margin-left: 24px;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: var(--skyblue-text);
   text-align: center;
 }
 
@@ -79,7 +93,7 @@ ul {
 .hamburger-icon {
   width: 100%;
   height: 5px;
-  background-color: #6070ff;
+  background-color: var(--skyblue-bg);
   margin: 6px 0;
 }
 
@@ -89,7 +103,7 @@ ul {
 }
 
 .headline-section .flex-item1 {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 40px;
   line-height: 52px;
 }
@@ -125,7 +139,7 @@ ul {
 @media screen and (max-width: 768px) {
   .contact-btn {
     padding: 12px 16px;
-    background: #fff;
+    background: var(--white-bg);
     border-radius: 8px;
     width: 140px;
     height: 48px;
@@ -137,7 +151,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: var();
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -155,7 +169,7 @@ ul {
 
 .grid-item {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: var(--white-bg);
   transition: 0.3s;
   width: 100%;
   border: 1px solid #dfe1e6;
@@ -196,7 +210,7 @@ ul {
 }
 
 .project-title {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
@@ -211,7 +225,7 @@ ul {
 }
 
 .ptag1 {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   font-size: 13px;
   line-height: 16px;
   color: #344563;
@@ -261,7 +275,7 @@ ul {
 
 .ptag3,
 .ptag5 {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   color: #7a869a;
 }
 
@@ -282,25 +296,25 @@ ul {
 }
 
 .wcat {
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-right: 20px;
-  color: #6070ff;
+  color: var();
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
 }
 
 .btn {
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
+  color: var(--blue-text);
   letter-spacing: 0.03em;
-  background-color: #fff;
-  border: 1px solid #396df2;
+  background-color: var(--white-bg);
+  border: var(--blue-border);
   border-radius: 8px;
   padding: 8px 16px;
   text-align: center;
@@ -312,9 +326,9 @@ ul {
 }
 
 .btn:hover {
-  background-color: #6070ff;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--skyblue-bg);
+  color: var(--white-text);
+  border: var(--white-border);
 }
 
 .cursor-pointer {
@@ -325,7 +339,7 @@ ul {
 
 /* Begin About Myself Section */
 .about-myself {
-  background-color: #fff;
+  background-color: var(--white-bg);
   border-top-right-radius: 75px;
   padding: 100px 24px;
 }
@@ -335,7 +349,7 @@ ul {
   align-items: center;
   width: 327px;
   height: 101px;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -352,7 +366,7 @@ ul {
 }
 
 .connect-text {
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   color: #7f8cff;
 }
 
@@ -365,8 +379,8 @@ ul {
 }
 
 .outer-item-left {
-  color: #000;
-  font-weight: 500;
+  color: var(--dark-text);
+  font-weight: var(--font-weight-500);
   font-size: 20px;
   line-height: 24px;
 }
@@ -386,7 +400,7 @@ ul {
 }
 
 .inner-item-right {
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
   font-size: 15px;
   line-height: 20px;
   margin-left: 20px;
@@ -422,27 +436,27 @@ hr {
 
 /* Begin Contact Section */
 .contact {
-  background: #6070ff;
+  background: var(--skyblue-bg);
   border-top-left-radius: 75px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 25px;
-  background-image: url(../img/background-contact.svg);
+  background-image: url("../img/background-contact.svg");
   background-repeat: no-repeat;
   background-position: right;
-  border-top: 1px solid #fff;
+  border-top: var(--white-border);
 }
 
 .contact-title {
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #fff;
+  color: var(--white-text);
   padding-top: 103px;
 }
 
-.contact-deccription {
+.contact-decription {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -505,15 +519,14 @@ hr {
 
   .desktop-nav > ul {
     display: flex;
-    justify-content: space-around;
+    gap: 25px;
   }
 
   .nav-flex-item .link {
-    font-weight: 500;
+    font-weight: var(--font-weight-500);
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    margin-left: 25px;
   }
 
   /* End Header Section */
@@ -612,13 +625,13 @@ hr {
   .abt-cat-inner {
     display: flex;
     flex-direction: row;
+    gap: 0.75rem;
   }
 
   .abt-cat-inner-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px;
   }
 
   .inner-item-right {
@@ -640,10 +653,11 @@ hr {
     padding-left: 320px;
     padding-right: 320px;
     padding-bottom: 100px;
-    background-image: url(../img/background-contact.svg);
+    background-image: url("../img/background-contact.svg");
     background-repeat: no-repeat;
     background-position: right;
-    border-top: 1px solid #fff;
+
+    /* border-top: 1px solid #fff; */
   }
 
   .contact-btn {

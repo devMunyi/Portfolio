@@ -204,6 +204,11 @@ ul {
   background-size: cover;
   background-position: center center;
   border-radius: 8px;
+  transition: transform 0.5s ease-out;
+}
+
+.project_img:hover {
+  transform: scale(1.070);
 }
 
 .project1_bg_img {

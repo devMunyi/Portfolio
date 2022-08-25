@@ -89,6 +89,7 @@ ul {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -338,7 +339,8 @@ ul {
   margin-left: 16px;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--skyblue-bg);
   color: var(--white-text);
   border: var(--white-border);
@@ -545,8 +547,9 @@ hr {
     padding: 5px 10px;
   }
 
-  .link:hover, .link:focus {
-    color: white;
+  .link:hover,
+  .link:focus {
+    color: var(--white-text);
     background-color: var(--skyblue-bg);
   }
 

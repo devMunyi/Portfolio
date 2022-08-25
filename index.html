@@ -8,307 +8,356 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="wrapper1">
-      <!--header-->
+    <!-- Wrapper for both header and headline section -->
+    <div class="header-headline-wrapper">
+      <!-- header -->
       <header class="header">
-        <a class="logo" href="#">MY LOGO</a>
-        <nav class="menu">
+        <a class="logo link" href="#">MY LOGO</a>
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
           <div class="hamburger-icon"></div>
           <div class="hamburger-icon"></div>
           <div class="hamburger-icon"></div>
         </nav>
+
+        <!-- Desktop nav -->
+        <nav class="desktop-nav">
+          <ul class="nav-flex">
+            <li class="nav-flex-item">
+              <a class="link" href="#works">Portfolio</a>
+            </li>
+            <li class="nav-flex-item">
+              <a class="link" href="#about">About</a>
+            </li>
+            <li class="nav-flex-item">
+              <a class="link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <!--Headline Section-->
-      <section class="headline-section">
-        <h2 class="flex-item flex-item1">I'm Samuel, glad to see you!</h2>
-        <p class="flex-item flex-item2">
-          I'm a software developer! I can help you build a product , feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don't hestiate to contact
-          me.
-        </p>
+      <!-- Headline Section -->
+      <section id="headline-section" class="headline-section">
+          <h2 class="flex-item flex-item1">
+            I'm Samuel,<br />
+            glad to see you!
+          </h2>
+          <p class="flex-item flex-item2">
+            I'm a software developer! I can help you build a product , feature
+            or website. Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don't hestiate to
+            contact me.
+          </p>
 
-        <h2 class="flex-item flex-item3 connect-text">LET'S CONNECT</h2>
+          <h2 class="flex-item flex-item3 connect-text">LET'S CONNECT</h2>
 
-        <!--Social media icons-->
-        <ul class="social-media">
-          <li class="social-md social-md-1">
-            <a href="#"
-              ><img src="./img/social-media-icons/twitter.svg" alt="Twitter"
-            /></a>
-          </li>
-          <li class="social-md social-md-2">
-            <a href="#"
-              ><img src="./img/social-media-icons/Linkedin.svg" alt="LinkedIn"
-            /></a>
-          </li>
-          <li class="social-md social-md-3">
-            <a href="#"
-              ><img src="./img/social-media-icons/m_.svg" alt="M"
-            /></a>
-          </li>
-          <li class="social-md social-md-4">
-            <a href="#"
-              ><img src="./img/social-media-icons/github.svg" alt="Github"
-            /></a>
-          </li>
-          <li class="social-md social-md-5">
-            <a href="#"
-              ><img src="./img/social-media-icons/f_.svg" alt="F"
-            /></a>
-          </li>
-        </ul>
+          <!-- Social media icons -->
+          <ul class="social-media">
+            <li class="social-md social-md-1">
+              <a href="#"
+                ><img src="./img/social-media-icons/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li class="social-md social-md-2">
+              <a href="#"
+                ><img
+                  src="./img/social-media-icons/Linkedin.svg"
+                  alt="LinkedIn"
+              /></a>
+            </li>
+            <li class="social-md social-md-3">
+              <a href="#"
+                ><img src="./img/social-media-icons/m_.svg" alt="M"
+              /></a>
+            </li>
+            <li class="social-md social-md-4">
+              <a href="#"
+                ><img src="./img/social-media-icons/github.svg" alt="Github"
+              /></a>
+            </li>
+            <li class="social-md social-md-5">
+              <a href="#"
+                ><img src="./img/social-media-icons/f_.svg" alt="F"
+              /></a>
+            </li>
+          </ul>
       </section>
     </div>
 
-    <!--works-->
-    <section class="works">
+    <!-- works section -->
+    <section id="works" class="works">
       <div class="grid-item grid-item1">
-        <div class="bg-img-container bg-img1"></div>
-        <h2 class="project-title ml-16 mr-16">Tonic</h2>
-        <ul class="ptags">
-          <li class="ptag ptag1">CANOPY</li>
-          <li class="ptag ptag2"></li>
-          <li class="ptag ptag3">Back End Dev</li>
-          <li class="ptag ptag4"></li>
-          <li class="ptag ptag5">2015</li>
-        </ul>
-        <p class="description p-description ml-16 mr-16">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
+        <div class="flex-sect flex-sect1 project_img project1_bg_img"></div>
+        <div class="flex-sect flex-sect2">
+          <h2 class="project-title mlr-16">Tonic</h2>
+          <ul class="ptags">
+            <li class="ptag ptag1">CANOPY</li>
+            <li class="ptag ptag2"></li>
+            <li class="ptag ptag3">Back End Dev</li>
+            <li class="ptag ptag4"></li>
+            <li class="ptag ptag5">2015</li>
+          </ul>
+          <p class="description p-description mlr-16">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
 
-        <ul class="works-categories">
-          <li class="wcat wcat1">html</li>
-          <li class="wcat wcat1">css</li>
-          <li class="wcat wcat1">javascript</li>
-        </ul>
-        <br />
-        <button type="submit" class="btn project-view-btn cursor-pointer">
-          See Project
-        </button>
+          <ul class="works-categories">
+            <li class="wcat wcat1">html</li>
+            <li class="wcat wcat1">css</li>
+            <li class="wcat wcat1">javascript</li>
+          </ul>
+          <br />
+          <button type="submit" class="btn project-view-btn cursor-pointer">
+            See Project
+          </button>
+        </div>
       </div>
       <div class="grid-item grid-item2">
-        <div class="bg-img-container bg-img2"></div>
-        <h2 class="project-title ml-16 mr-16">Multi-Post Stories</h2>
-        <ul class="ptags">
-          <li class="ptag ptag1">CANOPY</li>
-          <li class="ptag ptag2"></li>
-          <li class="ptag ptag3">Back End Dev</li>
-          <li class="ptag ptag4"></li>
-          <li class="ptag ptag5">2015</li>
-        </ul>
-        <p class="description p-description ml-16 mr-16">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
+        <div class="flex-sect flex-sect1 project_img project2_bg_img"></div>
+        <div class="flex-sect flex-sect2">
+          <h2 class="project-title mlr-16">Multi-Post Stories</h2>
+          <ul class="ptags">
+            <li class="ptag ptag1">FACEBOOK</li>
+            <li class="ptag ptag2"></li>
+            <li class="ptag ptag3">Full Stack Dev</li>
+            <li class="ptag ptag4"></li>
+            <li class="ptag ptag5">2015</li>
+          </ul>
+          <p class="description p-description mlr-16">
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
+          </p>
 
-        <ul class="works-categories">
-          <li class="wcat wcat1">html</li>
-          <li class="wcat wcat1">css</li>
-          <li class="wcat wcat1">javascript</li>
-        </ul>
-        <br />
-        <button type="submit" class="btn project-view-btn cursor-pointer">
-          See Project
-        </button>
+          <ul class="works-categories">
+            <li class="wcat wcat1">html</li>
+            <li class="wcat wcat1">Ruby on rails</li>
+            <li class="wcat wcat1">css</li>
+            <li class="wcat wcat1">javascript</li>
+          </ul>
+          <br />
+          <button type="submit" class="btn project-view-btn cursor-pointer">
+            See Project
+          </button>
+        </div>
       </div>
       <div class="grid-item grid-item3">
-        <div class="bg-img-container bg-img3"></div>
-        <h2 class="project-title ml-16 mr-16">Tonic</h2>
-        <ul class="ptags">
-          <li class="ptag ptag1">CANOPY</li>
-          <li class="ptag ptag2"></li>
-          <li class="ptag ptag3">Back End Dev</li>
-          <li class="ptag ptag4"></li>
-          <li class="ptag ptag5">2015</li>
-        </ul>
-        <p class="description p-description ml-16 mr-16">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
+        <div class="flex-sect flex-sect1 project_img project3_bg_img"></div>
+        <div class="flex-sect flex-sect2">
+          <h2 class="project-title mlr-16">Facebook 360</h2>
+          <ul class="ptags">
+            <li class="ptag ptag1">FACEBOOK</li>
+            <li class="ptag ptag2"></li>
+            <li class="ptag ptag3">Full Stack Dev</li>
+            <li class="ptag ptag4"></li>
+            <li class="ptag ptag5">2015</li>
+          </ul>
+          <p class="description p-description mlr-16">
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
+          </p>
 
-        <ul class="works-categories">
-          <li class="wcat wcat1">html</li>
-          <li class="wcat wcat1">css</li>
-          <li class="wcat wcat1">javascript</li>
-        </ul>
-        <br />
-        <button type="submit" class="btn project-view-btn cursor-pointer">
-          See Project
-        </button>
+          <ul class="works-categories">
+            <li class="wcat wcat1">html</li>
+            <li class="wcat wcat1">Ruby on rails</li>
+            <li class="wcat wcat1">css</li>
+            <li class="wcat wcat1">javascript</li>
+          </ul>
+          <br />
+          <button type="submit" class="btn project-view-btn cursor-pointer">
+            See Project
+          </button>
+        </div>
       </div>
       <div class="grid-item grid-item4">
-        <div class="bg-img-container bg-img4"></div>
-        <h2 class="project-title ml-16 mr-16">Multi-Post Stories</h2>
-        <ul class="ptags">
-          <li class="ptag ptag1">CANOPY</li>
-          <li class="ptag ptag2"></li>
-          <li class="ptag ptag3">Back End Dev</li>
-          <li class="ptag ptag4"></li>
-          <li class="ptag ptag5">2015</li>
-        </ul>
-        <p class="description p-description ml-16 mr-16">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
+        <div class="flex-sect flex-sect1 project_img project4_bg_img"></div>
+        <div class="flex-sect flex-sect2">
+          <h2 class="project-title mlr-16">Uber Navigation</h2>
+          <ul class="ptags">
+            <li class="ptag ptag1">Uber</li>
+            <li class="ptag ptag2"></li>
+            <li class="ptag ptag3">Lead Developer</li>
+            <li class="ptag ptag4"></li>
+            <li class="ptag ptag5">2018</li>
+          </ul>
+          <p class="description p-description mlr-16">
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
+          </p>
 
-        <ul class="works-categories">
-          <li class="wcat wcat1">html</li>
-          <li class="wcat wcat1">css</li>
-          <li class="wcat wcat1">javascript</li>
-        </ul>
-        <br />
-        <button type="submit" class="btn project-view-btn cursor-pointer">
-          See Project
-        </button>
+          <ul class="works-categories">
+            <li class="wcat wcat1">html</li>
+            <li class="wcat wcat1">Ruby on rails</li>
+            <li class="wcat wcat1">css</li>
+            <li class="wcat wcat1">javascript</li>
+          </ul>
+          <br />
+          <button type="submit" class="btn project-view-btn cursor-pointer">
+            See Project
+          </button>
+        </div>
       </div>
     </section>
 
-    <!--About Myself-->
-    <section class="about-myself">
-      <h2 class="about-title">About Myself</h2>
-      <p class="description about-description">
-        Hello I'm a software developer! I can help you build a product , feature
-        or website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don't hestiate to contact me.
-      </p>
+    <!-- Wrapper for both about and contact sections -->
+    <div class="about-contact-wrapper">
+      <!-- About Myself -->
+      <section id="about" class="about-myself">
+        <div class="about-flex__sect__left">
+          <h2 class="about-title">About <br> Myself</h2>
+          <p class="description about-description">
+            Hello I'm a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don't
+            hestiate to contact me.
+          </p>
 
-      <h2 class="connect-text">LET'S CONNECT</h2>
+          <h2 class="connect-text">LET'S CONNECT</h2>
 
-      <!--Social media icons-->
-      <ul class="social-media-2">
-        <li class="social-md social-md-4">
-          <a href="#"
-            ><img src="./img/social-media-icons/github.svg" alt="Github"
-          /></a>
-        </li>
-        <li class="social-md social-md-2">
-          <a href="#"
-            ><img src="./img/social-media-icons/Linkedin.svg" alt="LinkedIn"
-          /></a>
-        </li>
-        <li class="social-md social-md-5">
-          <a href="#"><img src="./img/social-media-icons/f_.svg" alt="F" /></a>
-        </li>
-        <li class="social-md social-md-1">
-          <a href="#"
-            ><img src="./img/social-media-icons/twitter.svg" alt="Twitter"
-          /></a>
-        </li>
-        <li class="social-md social-md-3">
-          <a href="#"><img src="./img/social-media-icons/m_.svg" alt="M" /></a>
-        </li>
-      </ul>
-
-      <button type="submit" class="btn resume-btn cursor-pointer">
-        Get my resume
-      </button>
-
-      <ul class="abt-cat-outer">
-        <li class="outer-list active-list">
-          <span class="abt-cat abt-cat1 active-list-item"
-            ><span class="outer-item-left">Languages</span
-            ><span class="outer-item-right">&#8964;</span></span
-          >
-          <ul class="abt-cat-inner">
-            <li class="abt-cat-inner-item abt-cat-inner-item1">
-              <img
-                src="./img/js.png"
-                alt="JavaScript Icon"
-                class="inner-item-left"
-              />
-              <span class="inner-item-right">javascript</span>
+          <!-- Social media icons -->
+          <ul class="social-media-2">
+            <li class="social-md social-md-4">
+              <a href="#"
+                ><img src="./img/social-media-icons/github.svg" alt="Github"
+              /></a>
             </li>
-            <li class="abt-cat-inner-item abt-cat-inner-item2">
-              <img
-                src="./img/html.png"
-                alt="HTML Icon"
-                class="inner-item-left"
-              />
-              <span class="inner-item-right">HTML</span>
+            <li class="social-md social-md-2">
+              <a href="#"
+                ><img
+                  src="./img/social-media-icons/Linkedin.svg"
+                  alt="LinkedIn"
+              /></a>
             </li>
-            <li class="abt-cat-inner-item abt-cat-inner-item3">
-              <img src="./img/css.png" alt="CSS Icon" class="inner-item-left" />
-              <span class="inner-item-right">CSS</span>
+            <li class="social-md social-md-5">
+              <a href="#"
+                ><img src="./img/social-media-icons/f_.svg" alt="F"
+              /></a>
+            </li>
+            <li class="social-md social-md-1">
+              <a href="#"
+                ><img src="./img/social-media-icons/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li class="social-md social-md-3">
+              <a href="#"
+                ><img src="./img/social-media-icons/m_.svg" alt="M"
+              /></a>
             </li>
           </ul>
-        </li>
-        <!-- <hr /> -->
-        <li class="outer-list">
-          <span class="abt-cat abt-cat2">
-            <span class="outer-item-left">Frameworks</span
-            ><span class="outer-item-right">&rsaquo;</span>
-          </span>
-        </li>
-        <!-- <hr /> -->
-        <li class="outer-list">
-          <span class="abt-cat abt-cat3">
-            <span class="outer-item-left">Skills</span
-            ><span class="outer-item-right">&rsaquo;</span>
-          </span>
-        </li>
-        <!-- <hr> -->
-      </ul>
-    </section>
 
-    <!--Add Contact Form -->
-    <section class="contact">
-      <h2 class="contact-title">Contact me</h2>
+          <button type="submit" class="btn resume-btn cursor-pointer">
+            Get my resume
+          </button>
+        </div>
+        <div class="about-flex__sect__right">
+          <ul class="abt-cat-outer">
+            <li class="outer-list active-list">
+              <span class="abt-cat abt-cat1 active-list-item"
+                ><span class="outer-item-left">Languages</span
+                ><span class="outer-item-right"><img src="./img/down_arrow.svg" alt="Down icon"></span></span
+              >
+              <ul class="abt-cat-inner">
+                <li class="abt-cat-inner-item abt-cat-inner-item1">
+                  <img
+                    src="./img/js.png"
+                    alt="JavaScript Icon"
+                    class="inner-item-left"
+                  />
+                  <span class="inner-item-right">javascript</span>
+                </li>
+                <li class="abt-cat-inner-item abt-cat-inner-item2">
+                  <img
+                    src="./img/html.png"
+                    alt="HTML Icon"
+                    class="inner-item-left"
+                  />
+                  <span class="inner-item-right">HTML</span>
+                </li>
+                <li class="abt-cat-inner-item abt-cat-inner-item3">
+                  <img
+                    src="./img/css.png"
+                    alt="CSS Icon"
+                    class="inner-item-left"
+                  />
+                  <span class="inner-item-right">CSS</span>
+                </li>
+              </ul>
+            </li>
+            <li class="outer-list">
+              <span class="abt-cat abt-cat2">
+                <span class="outer-item-left">Frameworks</span
+                ><span class="outer-item-right"><img src="./img/forward_arrow.svg" alt="Forward Icon"></span>
+              </span>
+            </li>
+            <li class="outer-list">
+              <span class="abt-cat abt-cat3">
+                <span class="outer-item-left">Skills</span
+                ><span class="outer-item-right"><img src="./img/forward_arrow.svg" alt="Forward Icon"></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <p class="contact-deccription">
-        If you have an application you are interested in developing, a feature
-        that you need built or a project that needs coding. I’d love to help
-        with it
-      </p>
+      <!-- Add Contact Form -->
+      <section id="contact" class="contact">
+        <h2 class="contact-title">Contact me</h2>
 
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/xnqrnpng"
-        method="post"
-      >
-        <label>
-          <input
-            class="input username-input"
-            type="text"
-            name="user_name"
-            id="user_name"
-            maxlength="30"
-            placeholder="Yeremias"
-            required
-          />
-          <br />
-        </label>
+        <p class="contact-decription">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
 
-        <label>
-          <input
-            class="input email-input"
-            type="email"
-            name="user_email"
-            id="user_email"
-            required
-            placeholder="natajayanj14@gmail.com"
-          />
-          <br />
-        </label>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xnqrnpng"
+          method="post"
+        >
+          <label>
+            <input
+              class="input username-input"
+              type="text"
+              name="user_name"
+              id="user_name"
+              maxlength="30"
+              placeholder="Yeremias"
+              required
+            />
+            <br />
+          </label>
 
-        <label>
-          <textarea
-            class="input message-input"
-            placeholder="Write your message here"
-            name="user_message"
-            id="user_message"
-            cols="30"
-            rows="10"
-            maxlength="500"
-            required></textarea
-          ><br />
-        </label>
+          <label>
+            <input
+              class="input email-input"
+              type="email"
+              name="user_email"
+              id="user_email"
+              required
+              placeholder="natajayanj14@gmail.com"
+            />
+            <br />
+          </label>
 
-        <button type="submit" class="contact-btn btn">Get In Touch</button>
-      </form>
-      <div class="end-line"></div>
-    </section>
+          <label>
+            <textarea
+              class="input message-input"
+              placeholder="Write your message here"
+              name="user_message"
+              id="user_message"
+              cols="30"
+              rows="10"
+              maxlength="500"
+              required
+            ></textarea
+            ><br />
+          </label>
+
+          <button type="submit" class="contact-btn btn">Get In Touch</button>
+        </form>
+        <div class="end-line"></div>
+      </section>
+    </div>
   </body>
 </html>

@@ -134,9 +134,8 @@ ul {
 .social-media {
   list-style: none;
   display: inline-flex;
-  gap: 24px;
-  align-items: center;
   gap: 20px;
+  align-items: center;
   padding-left: 24px;
 }
 
@@ -160,7 +159,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var();
+    color: var(--skyblue-text);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -314,7 +313,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-right: 20px;
-  color: var();
+  color: var(--skyblue-text);
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;

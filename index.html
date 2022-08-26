@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v1" />
   </head>
   <body>
     <!-- Wrapper for both header and headline section -->
@@ -19,7 +19,6 @@
           <div class="hamburger-icon"></div>
           <div class="hamburger-icon"></div>
         </nav>
-
         <!-- Desktop nav -->
         <nav class="desktop-nav">
           <ul class="nav-flex">
@@ -48,9 +47,7 @@
             what you see and have a project you need coded, don't hestiate to
             contact me.
           </p>
-
           <h2 class="flex-item flex-item3 connect-text">LET'S CONNECT</h2>
-
           <!-- Social media icons -->
           <ul class="social-media">
             <li class="social-md social-md-1">
@@ -101,7 +98,6 @@
             A daily selection of privately personalized reads; no accounts or
             sign-ups required.
           </p>
-
           <ul class="works-categories">
             <li class="wcat wcat1">html</li>
             <li class="wcat wcat1">css</li>
@@ -129,7 +125,6 @@
             existing story over the course of a day without spamming their
             friends.
           </p>
-
           <ul class="works-categories">
             <li class="wcat wcat1">html</li>
             <li class="wcat wcat1">Ruby on rails</li>
@@ -157,7 +152,6 @@
             Exploring the future of media in Facebook's first Virtual Reality
             app; a place to discover and enjoy 360 photos and videos on Gear VR.
           </p>
-
           <ul class="works-categories">
             <li class="wcat wcat1">html</li>
             <li class="wcat wcat1">Ruby on rails</li>
@@ -185,7 +179,6 @@
             A smart assistant to make driving more safe, efficient, and fun by
             unlocking your most expensive computer: your car.
           </p>
-
           <ul class="works-categories">
             <li class="wcat wcat1">html</li>
             <li class="wcat wcat1">Ruby on rails</li>
@@ -204,17 +197,15 @@
     <div class="about-contact-wrapper">
       <!-- About Myself -->
       <section id="about" class="about-myself">
-        <div class="about-flex-sect">
-          <h2 class="about-title">About Myself</h2>
+        <div class="about-flex__sect__left">
+          <h2 class="about-title">About <br> Myself</h2>
           <p class="description about-description">
             Hello I'm a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don't
             hestiate to contact me.
           </p>
-
           <h2 class="connect-text">LET'S CONNECT</h2>
-
           <!-- Social media icons -->
           <ul class="social-media-2">
             <li class="social-md social-md-4">
@@ -245,17 +236,16 @@
               /></a>
             </li>
           </ul>
-
           <button type="submit" class="btn resume-btn cursor-pointer">
             Get my resume
           </button>
         </div>
-        <div class="about-flex-sect">
+        <div class="about-flex__sect__right">
           <ul class="abt-cat-outer">
             <li class="outer-list active-list">
               <span class="abt-cat abt-cat1 active-list-item"
                 ><span class="outer-item-left">Languages</span
-                ><span class="outer-item-right">&#8964;</span></span
+                ><span class="outer-item-right"><img src="./img/down_arrow.svg" alt="Down icon"></span></span
               >
               <ul class="abt-cat-inner">
                 <li class="abt-cat-inner-item abt-cat-inner-item1">
@@ -287,13 +277,13 @@
             <li class="outer-list">
               <span class="abt-cat abt-cat2">
                 <span class="outer-item-left">Frameworks</span
-                ><span class="outer-item-right">&rsaquo;</span>
+                ><span class="outer-item-right"><img src="./img/forward_arrow.svg" alt="Forward Icon"></span>
               </span>
             </li>
             <li class="outer-list">
               <span class="abt-cat abt-cat3">
                 <span class="outer-item-left">Skills</span
-                ><span class="outer-item-right">&rsaquo;</span>
+                ><span class="outer-item-right"><img src="./img/forward_arrow.svg" alt="Forward Icon"></span>
               </span>
             </li>
           </ul>
@@ -303,13 +293,11 @@
       <!-- Add Contact Form -->
       <section id="contact" class="contact">
         <h2 class="contact-title">Contact me</h2>
-
         <p class="contact-decription">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-
         <form
           class="contact-form"
           action="https://formspree.io/f/xnqrnpng"
@@ -322,12 +310,11 @@
               name="user_name"
               id="user_name"
               maxlength="30"
-              placeholder="Yeremias"
+              placeholder="Fullname"
               required
             />
             <br />
           </label>
-
           <label>
             <input
               class="input email-input"
@@ -335,15 +322,14 @@
               name="user_email"
               id="user_email"
               required
-              placeholder="natajayanj14@gmail.com"
+              placeholder="Email Address"
             />
             <br />
           </label>
-
           <label>
             <textarea
-              class="input message-input"
-              placeholder="Write your message here"
+              class="input"
+              placeholder="Write your message here..."
               name="user_message"
               id="user_message"
               cols="30"
@@ -353,10 +339,8 @@
             ></textarea
             ><br />
           </label>
-
           <button type="submit" class="contact-btn btn">Get In Touch</button>
         </form>
-        <div class="end-line"></div>
       </section>
     </div>
   </body>

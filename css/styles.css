@@ -14,13 +14,14 @@
   --font-weight-700: 700;
   --font-weight-600: 600;
   --font-weight-500: 500;
+  --body-bg: #e5e5e5;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   margin: 0;
-  background-color: #e5e5e5;
+  background-color: var(--body-bg);
   min-height: calc(100vh - 10px);
 }
 
@@ -82,6 +83,17 @@ ul {
   line-height: 20px;
   color: var(--skyblue-text);
   text-align: center;
+  animation: rotation 2s 1 linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .mobile-nav {
@@ -122,8 +134,8 @@ ul {
 .social-media {
   list-style: none;
   display: inline-flex;
-  align-items: center;
   gap: 20px;
+  align-items: center;
   padding-left: 24px;
 }
 
@@ -147,7 +159,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var();
+    color: var(--skyblue-text);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -186,6 +198,11 @@ ul {
   background-size: cover;
   background-position: center center;
   border-radius: 8px;
+  transition: transform 0.5s ease-out;
+}
+
+.project_img:hover {
+  transform: scale(1.08);
 }
 
 .project1_bg_img {
@@ -296,7 +313,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-right: 20px;
-  color: var();
+  color: var(--skyblue-text);
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
@@ -314,13 +331,15 @@ ul {
   padding: 8px 16px;
   text-align: center;
   margin-top: 16px;
+  transition: all 0.5s ease-out;
 }
 
 .project-view-btn {
   margin-left: 16px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: var(--skyblue-bg);
   color: var(--white-text);
   border: var(--white-border);
@@ -515,10 +534,19 @@ hr {
   }
 
   .nav-flex-item .link {
+    flex: 1;
     font-weight: var(--font-weight-500);
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    transition: all 0.5s ease-out;
+    padding: 5px 10px;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: var(--white-text);
+    background-color: var(--skyblue-bg);
   }
 
   /* End Header Section */

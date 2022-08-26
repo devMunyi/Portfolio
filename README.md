@@ -8,7 +8,7 @@
 
 ## Built With
 
-- HTLM 
+- HTML 
 - CSS
 
 ## Getting Started

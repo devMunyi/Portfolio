@@ -84,6 +84,8 @@ ul {
   color: var(--skyblue-text);
   text-align: center;
   animation: rotation 2s 1 linear;
+  transition: all 0.5s ease-out;
+  padding: 5px 10px;
 }
 
 @keyframes rotation {
@@ -189,6 +191,11 @@ ul {
   margin-right: 16px;
 }
 
+img {
+  width: 100%;
+  height: inherit;
+}
+
 .project_img {
   margin-top: 16px;
   margin-left: 16px;
@@ -202,7 +209,7 @@ ul {
 }
 
 .project_img:hover {
-  transform: scale(1.08);
+  transform: scale(1.025);
 }
 
 .project1_bg_img {
@@ -545,8 +552,7 @@ hr {
 
   .link:hover,
   .link:focus {
-    color: var(--white-text);
-    background-color: var(--skyblue-bg);
+    background-color: var(--body-bg);
   }
 
   /* End Header Section */
@@ -571,10 +577,6 @@ hr {
     grid-gap: 142px;
     margin: 142px;
     padding: 0;
-  }
-
-  .project_img {
-    width: 100%;
   }
 
   .project1_bg_img {

@@ -5,7 +5,7 @@
 > This is a portfolio project meant to show case work done, skills and experiences.
 > It is based on Responsive Web Design (RWD) to suit both mobile and desktop screen sizes.
 
-## [LIVE DEMO](https://devmunyi.github.io/Portfolio/)
+## [Live Demo](https://devmunyi.github.io/Portfolio/)
 
 
 ## Built With

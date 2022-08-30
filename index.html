@@ -84,7 +84,8 @@
     <!-- works section -->
     <section id="works" class="works">
       <div class="grid-item grid-item1">
-        <div class="flex-sect flex-sect1 project_img project1_bg_img">
+        <div class="flex-sect flex-sect1 project_img">
+          <img src="img/project1_desktop_bg.png" alt="Project on Tonic">
         </div>
         <div class="flex-sect flex-sect2">
           <h2 class="project-title mlr-16">Tonic</h2>
@@ -111,7 +112,9 @@
         </div>
       </div>
       <div class="grid-item grid-item2">
-        <div class="flex-sect flex-sect1 project_img project2_bg_img"></div>
+        <div class="flex-sect flex-sect1 project_img">
+          <img src="img/project2.png" alt="Project on Multi-Post Stories">
+        </div>
         <div class="flex-sect flex-sect2">
           <h2 class="project-title mlr-16">Multi-Post Stories</h2>
           <ul class="ptags">
@@ -139,7 +142,9 @@
         </div>
       </div>
       <div class="grid-item grid-item3">
-        <div class="flex-sect flex-sect1 project_img project3_bg_img"></div>
+        <div class="flex-sect flex-sect1 project_img">
+          <img src="img/project3.png" alt="Project on Facebook 360">
+        </div>
         <div class="flex-sect flex-sect2">
           <h2 class="project-title mlr-16">Facebook 360</h2>
           <ul class="ptags">
@@ -166,7 +171,9 @@
         </div>
       </div>
       <div class="grid-item grid-item4">
-        <div class="flex-sect flex-sect1 project_img project4_bg_img"></div>
+        <div class="flex-sect flex-sect1 project_img">
+          <img src="img/project4.png" width="inherit" height="inherit" alt="Project on Uber Navigation">
+        </div>
         <div class="flex-sect flex-sect2">
           <h2 class="project-title mlr-16">Uber Navigation</h2>
           <ul class="ptags">
@@ -304,7 +311,7 @@
           action="https://formspree.io/f/xnqrnpng"
           method="post"
         >
-          <label>
+          <label for="user_name">
             <input
               class="input username-input"
               type="text"
@@ -316,7 +323,7 @@
             />
             <br />
           </label>
-          <label>
+          <label for="user_email">
             <input
               class="input email-input"
               type="email"
@@ -327,12 +334,12 @@
             />
             <br />
           </label>
-          <label>
+          <label for="message">
             <textarea
               class="input"
               placeholder="Write your message here..."
-              name="user_message"
-              id="user_message"
+              name="message"
+              id="message"
               cols="30"
               rows="10"
               maxlength="500"

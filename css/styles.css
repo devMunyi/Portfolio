@@ -10,7 +10,7 @@
   --blue-bg: #396df2;
   --blue-border: 1px solid#396df2;
   --skyblue-bg: #6070ff;
-  --skyblue-text: #6070ff;
+  --skyblue-text: hsl(234, 90%, 49%);
   --font-weight-700: 700;
   --font-weight-600: 600;
   --font-weight-500: 500;
@@ -91,7 +91,9 @@ ul {
 
 @keyframes rotation {
   from {
+    color: var(--dark-text);
     background-color: var(--body-bg);
+    font-weight: bold;
     transform: rotate(0deg);
   }
 
@@ -331,7 +333,8 @@ ul {
 .btn:hover,
 .btn:focus {
   background-color: var(--skyblue-bg);
-  color: var(--white-text);
+  color: var(--dark-text);
+  font-weight: 700;
   border: var(--white-border);
 }
 
@@ -539,6 +542,7 @@ hr {
   .link:hover,
   .link:focus {
     background-color: var(--body-bg);
+    color:  var(--dark-text)
   }
 
   /* End Header Section */

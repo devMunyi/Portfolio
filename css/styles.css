@@ -338,6 +338,13 @@ ul {
   font-weight: 700;
 }
 
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: var(--white-bg);
+  color: var(--dark-text);
+  font-weight: 700;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

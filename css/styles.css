@@ -10,11 +10,12 @@
   --blue-bg: #396df2;
   --blue-border: 1px solid#396df2;
   --skyblue-bg: #6070ff;
-  --skyblue-text: #6070ff;
+  --skyblue-text: hsl(234, 90%, 49%);
   --font-weight-700: 700;
   --font-weight-600: 600;
   --font-weight-500: 500;
   --body-bg: #e5e5e5;
+  --dark-border: #000;
 }
 
 body {
@@ -73,6 +74,7 @@ ul {
   position: relative;
   height: 100vh;
   margin-bottom: 100px;
+  background-color: var(--white-bg);
 }
 
 .logo {
@@ -90,6 +92,9 @@ ul {
 
 @keyframes rotation {
   from {
+    color: var(--dark-text);
+    background-color: var(--body-bg);
+    font-weight: bold;
     transform: rotate(0deg);
   }
 
@@ -191,19 +196,10 @@ ul {
   margin-right: 16px;
 }
 
-img {
-  width: 100%;
-  height: inherit;
-}
-
 .project_img {
   margin-top: 16px;
   margin-left: 16px;
   margin-right: 16px;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   border-radius: 8px;
   transition: transform 0.5s ease-out;
 }
@@ -212,20 +208,9 @@ img {
   transform: scale(1.025);
 }
 
-.project1_bg_img {
-  background-image: url("../img/project1.png");
-}
-
-.project2_bg_img {
-  background-image: url("../img/project2.png");
-}
-
-.project3_bg_img {
-  background-image: url("../img/project3.png");
-}
-
-.project4_bg_img {
-  background-image: url("../img/project4.png");
+#works .grid-item .flex-sect img {
+  width: 100%;
+  height: 100%;
 }
 
 .project-title {
@@ -241,6 +226,8 @@ img {
   align-items: center;
   justify-content: space-around;
   margin-left: 16px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .ptag1 {
@@ -288,8 +275,6 @@ img {
   width: 8px;
   height: 8px;
   border-radius: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .ptag3,
@@ -312,6 +297,8 @@ img {
   display: inline-flex;
   justify-content: space-around;
   margin-left: 16px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .wcat {
@@ -319,7 +306,6 @@ img {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin-right: 20px;
   color: var(--skyblue-text);
   background-color: #ebebff;
   padding: 4px 12px;
@@ -348,8 +334,15 @@ img {
 .btn:hover,
 .btn:focus {
   background-color: var(--skyblue-bg);
-  color: var(--white-text);
-  border: var(--white-border);
+  color: var(--dark-text);
+  font-weight: 700;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: var(--white-bg);
+  color: var(--dark-text);
+  font-weight: 700;
 }
 
 .cursor-pointer {
@@ -469,6 +462,9 @@ hr {
   background-repeat: no-repeat;
   background-position: right;
   border-top: var(--white-border);
+
+  /* fallback color incase background image not available */
+  background-color: var(--blue-bg);
 }
 
 .contact-title {
@@ -553,6 +549,7 @@ hr {
   .link:hover,
   .link:focus {
     background-color: var(--body-bg);
+    color: var(--dark-text);
   }
 
   /* End Header Section */
@@ -562,6 +559,9 @@ hr {
     background-image: url("../img/headline-desktop-bg.svg");
     padding-left: 190px;
     padding-right: 190px;
+
+    /* fallback color incase background image not available */
+    background-color: var(--white-bg);
   }
 
   .headline-section .flex-item1 {
@@ -579,22 +579,6 @@ hr {
     padding: 0;
   }
 
-  .project1_bg_img {
-    background-image: url("../img/project1_desktop_bg.png");
-  }
-
-  .project2_bg_img {
-    background-image: url("../img/project2_desktop_bg.svg");
-  }
-
-  .project3_bg_img {
-    background-image: url("../img/project3_desktop_bg.svg");
-  }
-
-  .project4_bg_img {
-    background-image: url("../img/project4_desktop_bg.svg");
-  }
-
   .grid-item {
     display: inline-flex;
     flex-direction: row;
@@ -602,6 +586,7 @@ hr {
 
   .flex-sect {
     width: 50%;
+    height: 100%;
   }
 
   .grid-item2 .flex-sect1 {
@@ -663,6 +648,7 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 0.75rem;
+    flex-wrap: wrap;
   }
 
   .abt-cat-inner-item {
@@ -694,7 +680,8 @@ hr {
     background-repeat: no-repeat;
     background-position: right;
 
-    /* border-top: 1px solid #fff; */
+    /* fallback color incase background image not available */
+    background-color: var(--blue-bg);
   }
 
   .contact-btn {

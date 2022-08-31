@@ -15,6 +15,7 @@
   --font-weight-600: 600;
   --font-weight-500: 500;
   --body-bg: #e5e5e5;
+  --dark-border: #000;
 }
 
 body {
@@ -335,7 +336,6 @@ ul {
   background-color: var(--skyblue-bg);
   color: var(--dark-text);
   font-weight: 700;
-  border: var(--white-border);
 }
 
 .cursor-pointer {
@@ -542,7 +542,7 @@ hr {
   .link:hover,
   .link:focus {
     background-color: var(--body-bg);
-    color:  var(--dark-text)
+    color: var(--dark-text);
   }
 
   /* End Header Section */

@@ -1,7 +1,7 @@
-let mobileNav = document.querySelector(".mobile-nav");
+let humbergerToggle = document.querySelector(".mobile-nav");
 let links = document.querySelectorAll(".desktop-nav .link");
 
-mobileNav.addEventListener("click", function () {
+humbergerToggle.addEventListener("click", function () {
   document.body.classList.toggle("change-mobile-nav");
 });
 

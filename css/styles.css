@@ -69,25 +69,6 @@ ul {
     transition: 0.4s;
   }
 
-  .change-mobile-nav .desktop-nav {
-    transform: translateX(0%);
-    background: var(--skyblue-bg);
-  }
-  
-  .change-mobile-nav .bar-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change-mobile-nav .bar-2 {
-    opacity: 0;
-  }
-  
-  .change-mobile-nav .bar-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
   .desktop-nav {
     position: fixed;
     top: 0;
@@ -101,9 +82,28 @@ ul {
     transform: translateX(100%);
   }
 
+  .change-mobile-nav .desktop-nav {
+    transform: translateX(0%);
+    background: var(--skyblue-bg);
+  }
+
+  .change-mobile-nav .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change-mobile-nav .bar-2 {
+    opacity: 0;
+  }
+
+  .change-mobile-nav .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
   .desktop-nav .link {
     color: var(--white-text);
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -570,7 +570,6 @@ hr {
 
 /* Begin Desktop Version CSS */
 @media screen and (min-width: 768px) {
-
   /* Begin Header Section */
   .header {
     padding-top: 20px;

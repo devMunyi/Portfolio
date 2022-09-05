@@ -18,6 +18,10 @@
   --dark-border: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -49,11 +53,14 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
   .mobile-nav {
-    /* margin-right: 36px;
-    width: 36px;
-    top: 12px;
-    left: 4px; */
     padding: 0.5em;
     z-index: 1000;
     background: transparent;
@@ -64,25 +71,31 @@ ul {
   .hamburger {
     width: 25px;
     height: 5px;
-    background-color: black;
+    background-color: var(--skyblue-bg);
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.4ms ease-in-out;
+  }
+
+  .change-mobile-nav .hamburger {
+    background-color: var(--white-bg);
   }
 
   .change-mobile-nav .desktop-nav {
-    transform: translateX(0%);
-    background: var(--skyblue-bg);
+    transform: translateX(0);
+
+    /* color: #000;
+    z-index: 1000; */
   }
-  
+
   .change-mobile-nav .bar-1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
   }
-  
+
   .change-mobile-nav .bar-2 {
     opacity: 0;
   }
-  
+
   .change-mobile-nav .bar-3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
@@ -94,27 +107,29 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    transition: transform 250ms cubic-bezier(0, 0.5, 0, 1);
+    z-index: 100;
+    background: var(--skyblue-bg);
+    transition: transform 250ms ease-in-out;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
   }
 
+  .nav-flex {
+    margin-top: 3r;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .desktop-nav .link {
     color: var(--white-text);
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-  }
-
-  .mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
   }
 }
 
@@ -570,7 +585,6 @@ hr {
 
 /* Begin Desktop Version CSS */
 @media screen and (min-width: 768px) {
-
   /* Begin Header Section */
   .header {
     padding-top: 20px;

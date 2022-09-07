@@ -623,20 +623,17 @@ hr {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #c1c7d0;
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: var(--white-bg);
   margin: auto;
   margin-bottom: 100px;
   padding-bottom: 25px;
-  border: 1px solid #888;
   width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
 }
 
@@ -658,6 +655,17 @@ hr {
 .modal-header {
   padding: 2px 32px;
   color: #172b4d;
+}
+
+.modal-content hr {
+  background: #ebecf0;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 35px;
+}
+
+#project-name {
+  margin-left: -12px;
 }
 
 /* End Contact Section */
@@ -851,10 +859,6 @@ hr {
     display: none;
   }
 
-  #project-name {
-    margin-left: -12px;
-  }
-
   .ptags {
     display: inline-flex;
     align-items: center;
@@ -864,26 +868,48 @@ hr {
     flex-wrap: wrap;
   }
 
-  .desktop-version-flex {
-    display: flex;
-    align-items: flex-start;
-    gap: 15rem;
-    margin: 19px;
-  }
-
   .modal .mlr-16 {
     margin-left: 0;
   }
 
   .ul-footer-desktop {
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
   }
 
   .modal-footer a {
-    width: 216px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .modal-footer .btn {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .desktop-version-grid {
+    margin-left: 16px;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .works-categories {
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    margin-top: 15px;
   }
 
   /* End Contact */

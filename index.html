@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css?v1" />
+    <style>
+
+    </style>
   </head>
   <body>
     <!-- Wrapper for both header and headline section -->
@@ -116,7 +119,12 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(0)"
+            id="myBtn"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
         </div>
@@ -146,7 +154,11 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(1)"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
         </div>
@@ -175,7 +187,11 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(2)"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
         </div>
@@ -204,9 +220,82 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(3)"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <section id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2 id="project-name">Tonic</h2>
+        </div>
+        <ul class="ptags">
+          <li class="ptag ptag1" id="tag-1">CANOPY</li>
+          <li class="ptag ptag2"></li>
+          <li class="ptag ptag3" id="tag-2">Back End Dev</li>
+          <li class="ptag ptag4"></li>
+          <li class="ptag ptag5" id="tag-3">2015</li>
+        </ul>
+        <div class="modal-img-container">
+          <img
+            id="project-img"
+            src="img/project1_desktop_bg.png"
+            alt="Project on Tonic"
+          />
+        </div>
+        <div class="desktop-version-grid">
+          <p class="description p-description mlr-16" id="project-desc">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <div class="ul-footer-desktop">
+            <ul class="works-categories">
+              <li class="wcat wcat1" id="tech-1">html</li>
+              <li class="wcat wcat1" id="tech-2">css</li>
+              <li class="wcat wcat1" id="tech-3">javascript</li>
+            </ul>
+            <hr />
+            <div class="modal-footer">
+              <a id="live_url" href="#">
+                <button
+                  id="myBtn"
+                  type="submit"
+                  class="btn project-view-btn cursor-pointer"
+                >
+                  <span> See Live</span>
+                  <img
+                    src="./img/see-live.png"
+                    alt="See Live Project"
+                    width="26"
+                    height="26"
+                  /></button
+              ></a>
+              <a id="source_url" href="#">
+                <button
+                  id="myBtn"
+                  type="submit"
+                  class="btn project-view-btn cursor-pointer"
+                >
+                  <span>See Source</span>
+                  <img
+                    src="./img/see-source.png"
+                    alt="See Source Code"
+                    width="28"
+                    height="28"
+                  /></button
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

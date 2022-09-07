@@ -6,6 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css?v1" />
+    <style>
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        margin-bottom: 100px;
+        padding-bottom: 25px;
+        /* margin-left: 30px;
+        margin-right: 50px; */
+        border: 1px solid #888;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 15px;
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      /* The Close Button */
+      .close {
+        color: #67798e;
+        float: right;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .modal-header {
+        padding: 2px 32px;
+        /* background-color: #5cb85c; */
+        color: #172b4d;
+      }
+
+      /* .modal-content {
+        padding: 16px;
+      } */
+
+      /* .modal-body {
+        padding: 2px 16px 25px 16px;
+      } */
+
+      /* .modal-footer {
+        padding: 2px 16px;
+      } */
+    </style>
   </head>
   <body>
     <!-- Wrapper for both header and headline section -->
@@ -116,7 +209,12 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(0)"
+            id="myBtn"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
         </div>
@@ -146,7 +244,11 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(1)"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
         </div>
@@ -175,7 +277,11 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(2)"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
         </div>
@@ -204,9 +310,82 @@
             <li class="wcat wcat1">javascript</li>
           </ul>
           <br />
-          <button type="submit" class="btn project-view-btn cursor-pointer">
+          <button
+            onclick="seeProjectDetails(3)"
+            type="submit"
+            class="btn project-view-btn cursor-pointer"
+          >
             See Project
           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <section id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2 id="project-name">Tonic</h2>
+        </div>
+        <ul class="ptags">
+          <li class="ptag ptag1" id="tag-1">CANOPY</li>
+          <li class="ptag ptag2"></li>
+          <li class="ptag ptag3" id="tag-2">Back End Dev</li>
+          <li class="ptag ptag4"></li>
+          <li class="ptag ptag5" id="tag-3">2015</li>
+        </ul>
+        <div class="modal-img-container">
+          <img
+            id="project-img"
+            src="img/project1_desktop_bg.png"
+            alt="Project on Tonic"
+          />
+        </div>
+        <div class="desktop-version-flex">
+          <p class="description p-description mlr-16" id="project-desc">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <div class="ul-footer-desktop">
+            <ul class="works-categories">
+              <li class="wcat wcat1" id="tech-1">html</li>
+              <li class="wcat wcat1" id="tech-2">css</li>
+              <li class="wcat wcat1" id="tech-3">javascript</li>
+            </ul>
+            <hr />
+            <div class="modal-footer">
+              <a id="live_url" href="#">
+                <button
+                  id="myBtn"
+                  type="submit"
+                  class="btn project-view-btn cursor-pointer"
+                >
+                  <span> See Live</span>
+                  <img
+                    src="./img/see-live.png"
+                    alt="See Live Project"
+                    width="26"
+                    height="26"
+                  /></button
+              ></a>
+              <a id="source_url" href="#">
+                <button
+                  id="myBtn"
+                  type="submit"
+                  class="btn project-view-btn cursor-pointer"
+                >
+                  <span>See Source</span>
+                  <img
+                    src="./img/see-source.png"
+                    alt="See Source Code"
+                    width="28"
+                    height="28"
+                  /></button
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -611,6 +611,56 @@ hr {
   color: #b3bac5;
 }
 
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-bottom: 25px;
+  border: 1px solid #888;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: #67798e;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 32px;
+  color: #172b4d;
+}
+
 /* End Contact Section */
 
 /* Begin Desktop Version CSS */
@@ -795,55 +845,6 @@ hr {
 
   .input {
     border-radius: 2px;
-  }
-
-  /* The Modal (background) */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    margin-bottom: 100px;
-    padding-bottom: 25px;
-    border: 1px solid #888;
-    width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
-  }
-
-  /* The Close Button */
-  .close {
-    color: #67798e;
-    float: right;
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .modal-header {
-    padding: 2px 32px;
-    color: #172b4d;
   }
 
   /* Modal Styles */

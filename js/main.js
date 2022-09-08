@@ -182,4 +182,13 @@ function populateStorage() {
   setFormData();
 }
 
+// check whether localstorage is populated
+if (!localStorage.getItem('portfolioVisitor')) {
+  // if not populate it
+  populateStorage();
+} else {
+  // if populated set available values to form fields
+  setFormData();
+}
+
 // ================ End Form Data Persistence to LocalStorage ==============

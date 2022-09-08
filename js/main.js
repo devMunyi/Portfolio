@@ -112,3 +112,84 @@ function seeProjectDetails(projectIndex) {
   // display modal
   modal.style.display = 'block';
 }
+
+// ===========Begin Form validation============
+
+// show a message with a type of the input
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function (event) {
+  // stop form submission
+  event.preventDefault();
+
+  //get email value from the form
+  const userEmail = form.elements['user_email'].value;
+  //check if the email is lowercase
+  const emailIsLowerCase = isLowerCase(userEmail);
+
+  //get the element to display email error
+  const emailErrorInput = document.getElementById('email_error_msg');
+
+  if (emailIsLowerCase) {
+    emailErrorInput.innerHTML = '';
+    // submit the form
+    form.submit();
+  } else {
+    // show an error
+    emailErrorInput.innerHTML = 'Your email should be in lowercase';
+  }
+});
+
+function isLowerCase(input) {
+  return input === String(input).toLowerCase();
+}
+
+// =============== End Form Vaildation ===========
+
+// ================ Begin Form Data persistence to LocalStorage ==========
+
+// //print user information on the console for testing purpose
+// console.log(portfolioVisitor);
+
+//check whether localstorage is populated
+if (!localStorage.getItem('portfolioVisitor')) {
+  //if not populate it
+  populateStorage();
+} else {
+  //if populated set available values to form fields
+  setFormData();
+}
+
+//persist form data in localstorage
+function populateStorage() {
+  // get the values of form fields you want to keep track of
+  const username = document.getElementById('user_name').value;
+  const userEmail = document.getElementById('user_email').value;
+  const userMessage = document.getElementById('message').value;
+
+  // create an object with portfolio visitor information
+  const portfolioVisitor = { username, userEmail, userMessage };
+
+  //store the portfolio visitor data as a JSON string in localstorage
+  localStorage.setItem('portfolioVisitor', JSON.stringify(portfolioVisitor));
+
+  //call the form inputs updater, to keep their values in sync with what is in localstorage
+  setFormData();
+}
+
+//set form data
+function setFormData() {
+  // get portfolio visitor's data from the localstorage as an object
+  const portfolioVisitor = JSON.parse(localStorage.getItem('portfolioVisitor'));
+  console.log('Retrived localstorage user info => ', portfolioVisitor);
+
+  //distructure the object to get individual form inputs values
+  const { username, userEmail, userMessage } = portfolioVisitor;
+
+  //set the distructured values to their corresponding form inputs
+  document.getElementById('user_name').value = username;
+  document.getElementById('user_email').value = userEmail;
+  document.getElementById('message').value = userMessage;
+}
+
+// ================ End Form Data Persistence to LocalStorage ==============

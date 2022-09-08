@@ -21,17 +21,17 @@ const btn = document.getElementById('myBtn');
 const span = document.getElementsByClassName('close')[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function () {
+btn.onclick = () => {
   modal.style.display = 'block';
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+span.onclick = () => {
   modal.style.display = 'none';
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.onclick = (event) => {
   if (event.target === modal) {
     modal.style.display = 'none';
   }
@@ -95,20 +95,56 @@ const tagOne = document.getElementById('tag-1');
 const tagTwo = document.getElementById('tag-2');
 const tagThree = document.getElementById('tag-3');
 
+/* eslint-disable no-unused-vars */
 function seeProjectDetails(projectIndex) {
   const project = projects[projectIndex];
   projectName.textContent = project.name;
-  tagOne.textContent = project.tag[0];
-  tagTwo.textContent = project.tag[1];
-  tagThree.textContent = project.tag[2];
+  const [firstTag, secondTag, thirdTag] = project.tag;
+  tagOne.textContent = firstTag;
+  tagTwo.textContent = secondTag;
+  tagThree.textContent = thirdTag;
   projectImage.src = project.featured_img;
   projectDescription.textContent = project.description;
-  techOne.textContent = project.tech[0];
-  techTwo.textContent = project.tech[1];
-  techThree.textContent = project.tech[2];
+  const [firstTech, secondTech, thirdTech] = project.tect;
+  techOne.textContent = firstTech;
+  techTwo.textContent = secondTech;
+  techThree.textContent = thirdTech;
   projectLiveLink.href = project.linkToLiveProject;
   projectSourceLink.href = project.linkToProjectSource;
 
   // display modal
   modal.style.display = 'block';
 }
+
+// ===========Begin Form validation============
+
+// show a message with a type of the input
+const form = document.getElementById('contact-form');
+
+function isLowerCase(input) {
+  return input === String(input).toLowerCase();
+}
+
+form.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
+
+  // get email value from the form
+  const userEmail = form.elements.user_email.value;
+  // check if the email is lowercase
+  const emailIsLowerCase = isLowerCase(userEmail);
+
+  // get the element to display email error
+  const emailErrorInput = document.getElementById('email_msg');
+
+  if (emailIsLowerCase) {
+    emailErrorInput.innerHTML = '';
+    // submit the form
+    form.submit();
+  } else {
+    // show an error
+    emailErrorInput.innerHTML = 'Your email should be in lowercase';
+  }
+});
+
+// =============== End Form Vaildation ===========

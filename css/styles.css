@@ -300,6 +300,7 @@ ul {
   text-align: center;
   margin-top: 16px;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .modal-footer .btn {
@@ -430,14 +431,12 @@ ul {
 .btn:focus {
   background-color: var(--skyblue-bg);
   color: var(--dark-text);
-  font-weight: 700;
 }
 
 .contact-btn:hover,
 .contact-btn:focus {
   background-color: var(--white-bg);
   color: var(--dark-text);
-  font-weight: 700;
 }
 
 .cursor-pointer {

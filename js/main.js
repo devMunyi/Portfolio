@@ -99,14 +99,16 @@ const tagThree = document.getElementById('tag-3');
 function seeProjectDetails(projectIndex) {
   const project = projects[projectIndex];
   projectName.textContent = project.name;
-  tagOne.textContent = project.tag[0];
-  tagTwo.textContent = project.tag[1];
-  tagThree.textContent = project.tag[2];
+  const [firstTag, secondTag, thirdTag] = project.tag;
+  tagOne.textContent = firstTag;
+  tagTwo.textContent = secondTag;
+  tagThree.textContent = thirdTag;
   projectImage.src = project.featured_img;
   projectDescription.textContent = project.description;
-  techOne.textContent = project.tech[0];
-  techTwo.textContent = project.tech[1];
-  techThree.textContent = project.tech[2];
+  const [firstTech, secondTech, thirdTech] = project.tect;
+  techOne.textContent = firstTech;
+  techTwo.textContent = secondTech;
+  techThree.textContent = thirdTech;
   projectLiveLink.href = project.linkToLiveProject;
   projectSourceLink.href = project.linkToProjectSource;
 
@@ -118,6 +120,7 @@ function seeProjectDetails(projectIndex) {
 
 // show a message with a type of the input
 const form = document.getElementById('contact-form');
+
 function isLowerCase(input) {
   return input === String(input).toLowerCase();
 }
@@ -132,7 +135,7 @@ form.addEventListener('submit', (event) => {
   const emailIsLowerCase = isLowerCase(userEmail);
 
   // get the element to display email error
-  const emailErrorInput = document.getElementById('email_error_msg');
+  const emailErrorInput = document.getElementById('email_msg');
 
   if (emailIsLowerCase) {
     emailErrorInput.innerHTML = '';

@@ -105,7 +105,7 @@ function seeProjectDetails(projectIndex) {
   tagThree.textContent = thirdTag;
   projectImage.src = project.featured_img;
   projectDescription.textContent = project.description;
-  const [firstTech, secondTech, thirdTech] = project.tect;
+  const [firstTech, secondTech, thirdTech] = project.tech;
   techOne.textContent = firstTech;
   techTwo.textContent = secondTech;
   techThree.textContent = thirdTech;
@@ -148,3 +148,38 @@ form.addEventListener('submit', (event) => {
 });
 
 // =============== End Form Vaildation ===========
+
+// ================ Begin Form Data persistence to LocalStorage ==========
+
+// set form data
+function setFormData() {
+  // get portfolio visitor's data from the localstorage as an object
+  const portfolioVisitor = JSON.parse(localStorage.getItem('portfolioVisitor'));
+
+  // distructure the object to get individual form inputs values
+  const { username, userEmail, userMessage } = portfolioVisitor;
+
+  // set the distructured values to their corresponding form inputs
+  document.getElementById('user_name').value = username;
+  document.getElementById('user_email').value = userEmail;
+  document.getElementById('message').value = userMessage;
+}
+
+// persist form data in localstorage
+function populateStorage() {
+  // get the values of form fields you want to keep track of
+  const username = document.getElementById('user_name').value;
+  const userEmail = document.getElementById('user_email').value;
+  const userMessage = document.getElementById('message').value;
+
+  // create an object with portfolio visitor information
+  const portfolioVisitor = { username, userEmail, userMessage };
+
+  // store the portfolio visitor data as a JSON string in localstorage
+  localStorage.setItem('portfolioVisitor', JSON.stringify(portfolioVisitor));
+
+  // call the form inputs updater, to keep their values in sync with what is in localstorage
+  setFormData();
+}
+
+// ================ End Form Data Persistence to LocalStorage ==============

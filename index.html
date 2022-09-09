@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css?v1" />
-    <style>
-
-    </style>
+    <style></style>
   </head>
   <body>
     <!-- Wrapper for both header and headline section -->
@@ -429,6 +427,7 @@
         >
           <label for="user_name">
             <input
+              onchange="populateStorage()"
               class="input username-input"
               type="text"
               name="user_name"
@@ -442,6 +441,7 @@
           <label for="user_email">
             <small id="email_msg" class="error"></small>
             <input
+              onchange="populateStorage()"
               class="input email-input"
               type="email"
               name="user_email"
@@ -453,6 +453,7 @@
           </label>
           <label for="message">
             <textarea
+              onchange="populateStorage()"
               class="input"
               placeholder="Write your message here..."
               name="message"

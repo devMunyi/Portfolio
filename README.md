@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is a static portfolio project meant to show case work done, skills and experiences.
+> This is my portfolio project meant to show case work done, skills and experiences.
 > It is based on Responsive Web Design (RWD) to suit both mobile and desktop screen sizes.
 
 ## [Live Demo](https://devmunyi.github.io/Portfolio/)

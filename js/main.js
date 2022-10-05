@@ -39,45 +39,45 @@ window.onclick = (event) => {
 
 const projects = [
   {
-    name: 'Tonic',
-    tag: ['CANOPY', 'Back End Dev', 2015],
+    name: 'ZIDI',
+    tag: ['Truweb Solutions', 'Software Developer', 2022],
     description:
-      'A daily selection of privately personalized reads; no account or sign-ups required',
+      'Zidi is a code sharing platform that aims to provide clean, universally acceptable code for all backend processes in all major languages. Anticipating to develop productivity tools for backend developers to make their work easier. Built with: jQuery, PHP, NodeJs and MySQL',
     featured_img: 'img/project1_desktop_bg.png',
-    tech: ['html', 'css', 'javascript'],
-    linkToLiveProject: 'https://devmunyi.github.io/Portfolio/',
-    linkToProjectSource: 'https://github.com/devMunyi/Portfolio',
+    tech: ['NodeJs', 'PHP', 'jQuery', 'Bootstrap', 'MySQL'],
+    linkToLiveProject: 'https://zidiapp.com/',
+    linkToProjectSource: 'https://github.com/devMunyi/zidi-app',
   },
   {
-    name: 'Multi-Post Stories',
-    tag: ['FACEBOOK', 'Full Stack Dev', 2015],
+    name: 'Morning Dew',
+    tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'Morning Dew is online plaftom that allows visitors to book rooms and is integrated with stripe payment gateway. Built with: ReactJs, NodeJs and MongoDB.',
     featured_img: 'img/project2.png',
-    tech: ['html', 'Ruby on rails', 'css', 'javascript'],
-    linkToLiveProject: 'https://devmunyi.github.io/Portfolio/',
-    linkToProjectSource: 'https://github.com/devMunyi/Portfolio',
+    tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
+    linkToLiveProject: 'https://morning-dew.herokuapp.com/home',
+    linkToProjectSource: 'https://github.com/devMunyi/morning-dew',
   },
 
   {
-    name: 'Facebook 360',
-    tag: ['FACEBOOK', 'Full Stack Dev', 2015],
+    name: 'POS',
+    tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      "An online store used to manage shop sales. Manages both Cash and Credit sales. Built with: Vanilla JavaScript, jQuery, PHP and MySQL",
     featured_img: 'img/project3.png',
-    tech: ['html', 'Ruby on rails', 'css', 'javascript'],
-    linkToLiveProject: 'https://devmunyi.github.io/Portfolio/',
-    linkToProjectSource: 'https://github.com/devMunyi/Portfolio',
+    tech: ['Vanilla JavaScript', 'JQuery', 'PHP', 'MySQL'],
+    linkToLiveProject: 'https://apa-shop.herokuapp.com/dashboard',
+    linkToProjectSource: 'https://github.com/devMunyi/POS',
   },
   {
-    name: 'Uber Navigation',
-    tag: ['Uber', 'Lead Developer', 2018],
+    name: 'Todo List',
+    tag: ['Microverse', 'Student', 2022],
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     featured_img: 'img/project4.png',
-    tech: ['html', 'Ruby on rails', 'css', 'javascript'],
-    linkToLiveProject: 'https://devmunyi.github.io/Portfolio/',
-    linkToProjectSource: 'https://github.com/devMunyi/Portfolio',
+    tech: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
+    linkToLiveProject: 'https://devmunyi.github.io/todo-list/',
+    linkToProjectSource: 'https://github.com/devMunyi/todo-list',
   },
 ];
 

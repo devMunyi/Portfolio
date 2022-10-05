@@ -161,7 +161,7 @@ ul {
   line-height: 20px;
   color: var(--skyblue-text);
   text-align: center;
-  animation: rotation 2s 1 linear;
+  animation: rotation 1s 1 linear;
   transition: all 0.5s ease-out;
   padding: 5px 10px;
 }
@@ -175,7 +175,7 @@ ul {
   }
 
   to {
-    transform: rotate(359deg);
+    transform: rotate(180deg);
   }
 }
 

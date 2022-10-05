@@ -42,9 +42,9 @@ const projects = [
     name: 'ZIDI',
     tag: ['Truweb Solutions', 'Software Developer', 2022],
     description:
-      'Zidi is a code sharing platform that aims to provide clean, universally acceptable code for all backend processes in all major languages. Anticipating to develop productivity tools for backend developers to make their work easier. Built with: jQuery, PHP, NodeJs and MySQL',
-    featured_img: 'img/project1_desktop_bg.png',
-    tech: ['NodeJs', 'PHP', 'jQuery', 'Bootstrap', 'MySQL'],
+      'Zidi is a code sharing platform that aims to provide clean, universally acceptable code for all backend processes in all major languages. Anticipating to develop productivity tools for backend developers to make their work easier.',
+    featured_img: './img/zidiapp/index.png',
+    tech: ['NodeJs', 'jQuery', 'Bootstrap', 'MySQL'],
     linkToLiveProject: 'https://zidiapp.com/',
     linkToProjectSource: 'https://github.com/devMunyi/zidi-app',
   },
@@ -52,8 +52,8 @@ const projects = [
     name: 'Morning Dew',
     tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      'Morning Dew is online plaftom that allows visitors to book rooms and is integrated with stripe payment gateway. Built with: ReactJs, NodeJs and MongoDB.',
-    featured_img: 'img/project2.png',
+      'Morning Dew is online plaftom that allows visitors to book rooms and is integrated with stripe payment gateway.',
+    featured_img: 'img/morning-dew/index.png',
     tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
     linkToLiveProject: 'https://morning-dew.herokuapp.com/home',
     linkToProjectSource: 'https://github.com/devMunyi/morning-dew',
@@ -63,8 +63,8 @@ const projects = [
     name: 'POS',
     tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      "An online store used to manage shop sales. Manages both Cash and Credit sales. Built with: Vanilla JavaScript, jQuery, PHP and MySQL",
-    featured_img: 'img/project3.png',
+      'An online store used to manage shop sales. Manages both Cash and Credit sales.',
+    featured_img: 'img/POS/index.png',
     tech: ['Vanilla JavaScript', 'JQuery', 'PHP', 'MySQL'],
     linkToLiveProject: 'https://apa-shop.herokuapp.com/dashboard',
     linkToProjectSource: 'https://github.com/devMunyi/POS',
@@ -74,12 +74,56 @@ const projects = [
     tag: ['Microverse', 'Student', 2022],
     description:
       'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
-    featured_img: 'img/project4.png',
+    featured_img: 'img/todo-list/index.png',
     tech: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
     linkToLiveProject: 'https://devmunyi.github.io/todo-list/',
     linkToProjectSource: 'https://github.com/devMunyi/todo-list',
   },
 ];
+
+const displayProjectsOnUI = () => {
+  const displayPlaceholder = document.getElementById('works');
+  const uiDisplay = projects.map(
+    (project, index) =>
+      `<div class="grid-item grid-item1">
+      <div class="flex-sect flex-sect1 project_img">
+        <img src="${project.featured_img}" alt="Project on ${project.name}" />
+      </div>
+      <div class="flex-sect flex-sect2">
+        <h2 class="project-title mlr-16">${project.name}</h2>
+        <ul class="ptags">
+          <li class="ptag ptag1">${project.tag[0]}</li>
+          <li class="ptag ptag2"></li>
+          <li class="ptag ptag3">${project.tag[1]}</li>
+          <li class="ptag ptag4"></li>
+          <li class="ptag ptag5">${project.tag[2]}</li>
+        </ul>
+        <p class="description p-description mlr-16">
+          ${project.description}
+        </p>
+        <ul class="works-categories">
+          <li class="wcat wcat1">${project?.tech[0]}</li>
+          <li class="wcat wcat1">${project?.tech[1]}</li>
+          <li class="wcat wcat1">${project?.tech[2]}</li>
+          <li class="wcat wcat1">${project?.tech[3]}</li>
+        </ul>
+        <br />
+        <button
+          onclick="seeProjectDetails(${index})"
+          id="myBtn"
+          type="submit"
+          class="btn project-view-btn cursor-pointer"
+        >
+          See Project
+        </button>
+      </div>
+    </div>`
+  );
+
+  displayPlaceholder.innerHTML = uiDisplay;
+};
+
+document.addEventListener('DOMContentLoaded', displayProjectsOnUI);
 
 // get the project name
 

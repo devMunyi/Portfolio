@@ -38,9 +38,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@munyi_sam](https://twitter.com/twitterhandle)
 - LinkedIn: [https://www.linkedin.com/in/samuel-munyi-01315b174/](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@Outkarm ](https://github.com/githubhandle)
 
 ## 🤝 Contributing
 

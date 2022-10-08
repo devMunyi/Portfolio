@@ -83,9 +83,9 @@ const projects = [
 
 const displayProjectsOnUI = () => {
   const displayPlaceholder = document.getElementById('works');
-  const uiDisplay = projects.map(
-    (project, index) =>
-      `<div class="grid-item grid-item1">
+  const uiDisplay = projects
+    .map(
+      (project, index) => `<div class="grid-item grid-item1">
       <div class="flex-sect flex-sect1 project_img">
         <img src="${project.featured_img}" alt="Project on ${project.name}" />
       </div>
@@ -117,8 +117,9 @@ const displayProjectsOnUI = () => {
           See Project
         </button>
       </div>
-    </div>`
-  );
+    </div>`,
+    )
+    .join('');
 
   displayPlaceholder.innerHTML = uiDisplay;
 };
@@ -132,15 +133,13 @@ const projectDescription = document.getElementById('project-desc');
 const projectImage = document.getElementById('project-img');
 const projectLiveLink = document.getElementById('live_url');
 const projectSourceLink = document.getElementById('source_url');
-const techOne = document.getElementById('tech-1');
-const techTwo = document.getElementById('tech-2');
-const techThree = document.getElementById('tech-3');
 const tagOne = document.getElementById('tag-1');
 const tagTwo = document.getElementById('tag-2');
 const tagThree = document.getElementById('tag-3');
 
 /* eslint-disable no-unused-vars */
 function seeProjectDetails(projectIndex) {
+  const worksCat = document.querySelector('#works-categories');
   const project = projects[projectIndex];
   projectName.textContent = project.name;
   const [firstTag, secondTag, thirdTag] = project.tag;
@@ -149,10 +148,22 @@ function seeProjectDetails(projectIndex) {
   tagThree.textContent = thirdTag;
   projectImage.src = project.featured_img;
   projectDescription.textContent = project.description;
-  const [firstTech, secondTech, thirdTech] = project.tech;
-  techOne.textContent = firstTech;
-  techTwo.textContent = secondTech;
-  techThree.textContent = thirdTech;
+  const techsCat = project.tech;
+  const techsCatUI = techsCat
+    .map(
+      (item, techIndex) => `
+    <li class="wcat wcat${techIndex + 1}" id="tech-${
+  techIndex + 1
+}">${item}</li>
+    `,
+    )
+    .join('');
+
+  worksCat.innerHTML = techsCatUI;
+
+  // techOne.textContent = firstTech;
+  // techTwo.textContent = secondTech;
+  // techThree.textContent = thirdTech;
   projectLiveLink.href = project.linkToLiveProject;
   projectSourceLink.href = project.linkToProjectSource;
 

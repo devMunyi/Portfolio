@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px
 }
 
 body {
@@ -678,9 +679,12 @@ hr {
 @media screen and (min-width: 768px) {
   /* Begin Header Section */
   .header {
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 154px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
   }
 
   .mobile-nav {

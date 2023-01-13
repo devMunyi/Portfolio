@@ -10,35 +10,36 @@
   </head>
   <body>
     <!-- Wrapper for both header and headline section -->
+
+    <header class="header">
+      <div class="mobile-menu">
+        <a class="logo link" href="#">MY LOGO</a>
+        <!-- Mobile nav -->
+        <div class="mobile-nav cursor-pointer">
+          <div class="hamburger bar-1"></div>
+          <div class="hamburger bar-2"></div>
+          <div class="hamburger bar-3"></div>
+        </div>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="desktop-nav">
+        <ul class="nav-flex">
+          <li class="nav-flex-item">
+            <a class="link" href="#works">Projects</a>
+          </li>
+          <li class="nav-flex-item">
+            <a class="link" href="#about">About</a>
+          </li>
+          <li class="nav-flex-item">
+            <a class="link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="header-headline-wrapper">
       <!-- header -->
       <!-- header -->
-      <header class="header">
-        <div class="mobile-menu">
-          <a class="logo link" href="#">MY LOGO</a>
-          <!-- Mobile nav -->
-          <div class="mobile-nav cursor-pointer">
-            <div class="hamburger bar-1"></div>
-            <div class="hamburger bar-2"></div>
-            <div class="hamburger bar-3"></div>
-          </div>
-        </div>
-
-        <!-- Desktop nav -->
-        <nav class="desktop-nav">
-          <ul class="nav-flex">
-            <li class="nav-flex-item">
-              <a class="link" href="#works">Projects</a>
-            </li>
-            <li class="nav-flex-item">
-              <a class="link" href="#about">About</a>
-            </li>
-            <li class="nav-flex-item">
-              <a class="link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
 
       <!-- Headline Section -->
       <section id="headline-section" class="headline-section">
@@ -93,9 +94,7 @@
     </div>
 
     <!-- works section -->
-    <section id="works" class="works">
-      
-    </section>
+    <section id="works" class="works"></section>
 
     <!-- The Modal -->
     <section id="myModal" class="modal">
@@ -125,9 +124,7 @@
             sign-ups required.
           </p>
           <div class="ul-footer-desktop">
-            <ul id ="works-categories" class="works-categories">
-              
-            </ul>
+            <ul id="works-categories" class="works-categories"></ul>
             <hr />
             <div class="modal-footer">
               <a id="live_url" href="#">

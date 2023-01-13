@@ -161,12 +161,12 @@ ul {
   line-height: 20px;
   color: var(--skyblue-text);
   text-align: center;
-  animation: rotation 1s 1 linear;
-  transition: all 0.5s ease-out;
+  /* animation: rotation 1s 1 linear;
+  transition: all 0.5s ease-out; */
   padding: 5px 10px;
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
   from {
     color: var(--dark-text);
     background-color: var(--body-bg);
@@ -177,7 +177,7 @@ ul {
   to {
     transform: rotate(180deg);
   }
-}
+} */
 
 .flex-item {
   margin-left: 24px;

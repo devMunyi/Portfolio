@@ -63,7 +63,7 @@ const projects = [
     name: 'POS',
     tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      'An online store used to manage shop sales. Manages both Cash and Credit sales.',
+      'An online store admin panel that can be used to manage shop sales. Makes it possible to manages both Cash and Credit sales.',
     featured_img: 'img/POS/index.png',
     tech: ['Vanilla JavaScript', 'JQuery', 'PHP', 'MySQL'],
     linkToLiveProject: 'https://apa-shop.herokuapp.com/dashboard',
@@ -82,7 +82,10 @@ const projects = [
 ];
 
 const displayProjectsOnUI = () => {
-  const displayPlaceholder = document.getElementById('works');
+  // let h2 = document.createElement('h2');
+  // h2.innerText = 'Projects';
+  // h2.classList.add('projects-h2');
+  const displayPlaceholder = document.getElementsByClassName('works')[0];
   const uiDisplay = projects
     .map(
       (project, index) => `<div class="grid-item grid-item1">
@@ -121,7 +124,7 @@ const displayProjectsOnUI = () => {
     )
     .join('');
 
-  displayPlaceholder.innerHTML = uiDisplay;
+    displayPlaceholder.innerHTML = uiDisplay;
 };
 
 document.addEventListener('DOMContentLoaded', displayProjectsOnUI);

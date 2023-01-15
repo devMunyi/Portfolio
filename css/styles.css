@@ -31,6 +31,15 @@ body {
   min-height: calc(100vh - 10px);
 }
 
+.projects-h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  border: 2px solid goldenrod !important;
+}
+
 .link {
   text-decoration: none;
 }
@@ -59,6 +68,12 @@ ul {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    background-color: #fff;
+
+    /* position: fixed;
+    top: 0;
+    z-index: 50; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px !important;
   }
 
   .mobile-nav {
@@ -88,11 +103,12 @@ ul {
     left: 0;
     right: 0;
     z-index: 100;
-    background: var(--skyblue-bg);
+    background: #797c9dd9;
     transition: transform 250ms ease-in-out;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
+    text-align: center;
   }
 
   .change-mobile-nav .desktop-nav {
@@ -114,11 +130,11 @@ ul {
   }
 
   .nav-flex {
-    /* margin-top: 3r; */
     margin: 3rem;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-top: 90px;
   }
 
   .desktop-nav .link {
@@ -128,6 +144,10 @@ ul {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
+  }
+
+  nav .nav-flex-item:hover {
+    text-decoration: underline;
   }
 }
 
@@ -621,7 +641,7 @@ hr {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   padding-top: 50px;
   padding-bottom: 50px;
   left: 0;
@@ -629,18 +649,21 @@ hr {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #c1c7d0;
+  background-color: rgb(0 0 0 / 75%);
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
   background-color: var(--white-bg);
-  margin: auto;
-  margin-bottom: 100px;
+  margin: 0 auto;
+
+  /* margin-bottom: 100px; */
   padding-bottom: 25px;
   width: 90%;
   border-radius: 15px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
 }
 
 /* The Close Button */
@@ -680,6 +703,7 @@ hr {
 @media screen and (min-width: 768px) {
   /* Begin Header Section */
   .header {
+    background-color: #2929e9b8;
     height: 60px;
     width: 100%;
     position: fixed;
@@ -702,7 +726,7 @@ hr {
     font-weight: var(--font-weight-500);
     font-size: 15px;
     line-height: 20px;
-    color: #344563;
+    color: #01060ef5;
     transition: all 0.5s ease-out;
     padding: 5px 10px;
   }
@@ -847,7 +871,7 @@ hr {
     background-position: right;
 
     /* fallback color incase background image not available */
-    background-color: var(--blue-bg);
+    background-color: #2929e9b8;
   }
 
   .contact-btn {

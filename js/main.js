@@ -124,7 +124,7 @@ const displayProjectsOnUI = () => {
     )
     .join('');
 
-    displayPlaceholder.innerHTML = uiDisplay;
+  displayPlaceholder.innerHTML = uiDisplay;
 };
 
 document.addEventListener('DOMContentLoaded', displayProjectsOnUI);

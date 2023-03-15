@@ -40,7 +40,7 @@ window.onclick = (event) => {
 const projects = [
   {
     name: 'Book Doctor Appointment',
-    tag: ['Remote Work', 'Micronauts', 2023],
+    tag: ['Micronaut', 'Software Developer Training', 2023],
     description:
       'This application consist of a front end react app, that relies on a rails backend, to allow a user to book an appointments with a doctor, from the list of doctors available.',
     featured_img: './img/capstone/doctors-booking.png',
@@ -50,7 +50,7 @@ const projects = [
   },
   {
     name: 'CRYPTO METRICS',
-    tag: ['Remote Work', 'Micronauts', 2023],
+    tag: ['Micronaut', 'Software Developer Training', 2023],
     description:
       'This applications shows real-time data for cryptocurrencies current pricing and market activity. The data used is fetched from blockchain API.',
     featured_img: './img/crytpo-metrics/cryptos.png',

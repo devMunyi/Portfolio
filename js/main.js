@@ -39,6 +39,26 @@ window.onclick = (event) => {
 
 const projects = [
   {
+    name: 'Book Doctor Appointment',
+    tag: ['Remote Work', 'Micronauts', 2023],
+    description:
+      'This application consist of a front end react app, that relies on a rails backend, to allow a user to book an appointments with a doctor, from the list of doctors available.',
+    featured_img: './img/capstone/doctors-booking.png',
+    tech: ['ReactJs', 'Redux', 'Rails', 'PostgreSQL'],
+    linkToLiveProject: 'https://devmunyi.github.io/booking-frontend/',
+    linkToProjectSource: 'https://github.com/devMunyi/booking-frontend',
+  },
+  {
+    name: 'CRYPTO METRICS',
+    tag: ['Remote Work', 'Micronauts', 2023],
+    description:
+      'This applications shows real-time data for cryptocurrencies current pricing and market activity. The data used is fetched from blockchain API.',
+    featured_img: './img/crytpo-metrics/cryptos.png',
+    tech: ['JavaScript', 'ReactJs', 'Redux', 'External API'],
+    linkToLiveProject: 'https://cryptocurrencies-metrics.netlify.app/',
+    linkToProjectSource: 'https://github.com/devMunyi/crypto-metrics',
+  },
+  {
     name: 'ZIDI',
     tag: ['Truweb Solutions', 'Software Developer', 2022],
     description:
@@ -85,7 +105,7 @@ const displayProjectsOnUI = () => {
   // let h2 = document.createElement('h2');
   // h2.innerText = 'Projects';
   // h2.classList.add('projects-h2');
-  const displayPlaceholder = document.getElementsByClassName('works')[0];
+  const displayPlaceholder = document.getElementById('projects_area');
   const uiDisplay = projects
     .map(
       (project, index) => `<div class="grid-item grid-item1">
@@ -155,8 +175,7 @@ function seeProjectDetails(projectIndex) {
   const techsCatUI = techsCat
     .map(
       (item, techIndex) => `
-    <li class="wcat wcat${techIndex + 1}" id="tech-${
-  techIndex + 1
+    <li class="wcat wcat${techIndex + 1}" id="tech-${techIndex + 1
 }">${item}</li>
     `,
     )
@@ -250,3 +269,35 @@ if (!localStorage.getItem('portfolioVisitor')) {
 }
 
 // ================ End Form Data Persistence to LocalStorage ==============
+
+// Select all the outer list elements
+const outerLists = document.querySelectorAll('#about .outer-list');
+
+if (outerLists.length) {
+// Add event listener to each outer list
+  outerLists.forEach((outerList) => {
+    outerList.addEventListener('click', () => {
+    // Check if the clicked outer list has the class "active-list"
+      const isActive = outerList.classList.contains('active-list');
+
+      // Hide all the nested lists and remove the "active-list" class from all outer lists
+      outerLists.forEach((list) => {
+        const arrowIcon = list.querySelector('img');
+        arrowIcon.setAttribute('src', './img/forward_arrow.svg');
+
+        list.classList.remove('active-list');
+        list.querySelector('.abt-cat-inner').style.display = 'none';
+      });
+
+      // If the clicked outer list is not active,
+      // show its nested list and add the "active-list" class
+      if (!isActive) {
+        const arrowIcon = outerList.querySelector('img');
+        arrowIcon.setAttribute('src', './img/down_arrow.svg');
+
+        outerList.classList.add('active-list');
+        outerList.querySelector('.abt-cat-inner').style.display = 'flex';
+      }
+    });
+  });
+}

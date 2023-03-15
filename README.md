@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@devMunyi](https://github.com/devMunyi)
 - Twitter: [@munyi_sam](https://twitter.com/twitterhandle)
-- LinkedIn: [https://www.linkedin.com/in/samuel-munyi-01315b174/](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [Samuel Munyi](https://linkedin.com/in/linkedinhandle)
 
 
 ## 🤝 Contributing

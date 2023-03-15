@@ -176,7 +176,7 @@ function seeProjectDetails(projectIndex) {
     .map(
       (item, techIndex) => `
     <li class="wcat wcat${techIndex + 1}" id="tech-${techIndex + 1
-}">${item}</li>
+        }">${item}</li>
     `,
     )
     .join('');
@@ -274,10 +274,10 @@ if (!localStorage.getItem('portfolioVisitor')) {
 const outerLists = document.querySelectorAll('#about .outer-list');
 
 if (outerLists.length) {
-// Add event listener to each outer list
+  // Add event listener to each outer list
   outerLists.forEach((outerList) => {
     outerList.addEventListener('click', () => {
-    // Check if the clicked outer list has the class "active-list"
+      // Check if the clicked outer list has the class "active-list"
       const isActive = outerList.classList.contains('active-list');
 
       // Hide all the nested lists and remove the "active-list" class from all outer lists

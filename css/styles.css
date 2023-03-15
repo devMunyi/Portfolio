@@ -512,6 +512,7 @@ ul {
   justify-content: space-between;
   padding: 18px 20px 18px 0;
   cursor: pointer;
+  flex-wrap: wrap !important;
 }
 
 .outer-item-left {
@@ -850,6 +851,8 @@ hr {
     flex-direction: row;
     gap: 0.75rem;
     flex-wrap: wrap;
+    overflow-x: auto;
+    max-width: 100%;
   }
 
   .abt-cat-inner-item {

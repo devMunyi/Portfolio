@@ -297,6 +297,12 @@ if (outerLists.length) {
 
         outerList.classList.add('active-list');
         outerList.querySelector('.abt-cat-inner').style.display = 'flex';
+        outerList.querySelector('.abt-cat-inner').style.flexDirection = 'row';
+        outerList.querySelector('.abt-cat-inner').style.gap = '0.75rem';
+        outerList.querySelector('.abt-cat-inner').style.flexWrap = 'wrap';
+        outerList.querySelector('.abt-cat-inner').style.overflowX = 'auto';
+        outerList.querySelector('.abt-cat-inner').style.maxWidth = '100%';
+
       }
     });
   });

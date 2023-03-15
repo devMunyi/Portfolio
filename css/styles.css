@@ -732,10 +732,13 @@ hr {
     padding: 5px 10px;
   }
 
-  .link:hover,
-  .link:focus {
+  .link:hover {
     background-color: var(--body-bg);
     color: var(--dark-text);
+  }
+
+  .click-effect {
+    border: 1px solid #fff;
   }
 
   /* End Header Section */

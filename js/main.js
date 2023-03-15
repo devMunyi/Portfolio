@@ -301,3 +301,16 @@ if (outerLists.length) {
     });
   });
 }
+
+const listItems = document.querySelectorAll('.desktop-nav .nav-flex-item');
+
+if (listItems.length) {
+  listItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // remove 'click-effect' class from all list items
+      listItems.forEach(li => li.classList.remove('click-effect'));
+      // toggle 'click-effect' class on the clicked item
+      item.classList.toggle('click-effect');
+    });
+  });
+}

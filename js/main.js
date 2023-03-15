@@ -44,7 +44,7 @@ const projects = [
     description:
       'This application consist of a front end react app, that relies on a rails backend, to allow a user to book an appointments with a doctor, from the list of doctors available.',
     featured_img: './img/capstone/doctors-booking.png',
-    tech: ['ReactJs', 'Redux', 'Rails', 'PostgreSQL'],
+    tech: ['ReactJs', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
     linkToLiveProject: 'https://devmunyi.github.io/booking-frontend/',
     linkToProjectSource: 'https://github.com/devMunyi/booking-frontend',
   },

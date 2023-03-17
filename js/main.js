@@ -176,7 +176,7 @@ function seeProjectDetails(projectIndex) {
     .map(
       (item, techIndex) => `
     <li class="wcat wcat${techIndex + 1}" id="tech-${techIndex + 1
-}">${item}</li>
+        }">${item}</li>
     `,
     )
     .join('');
@@ -186,8 +186,10 @@ function seeProjectDetails(projectIndex) {
   // techOne.textContent = firstTech;
   // techTwo.textContent = secondTech;
   // techThree.textContent = thirdTech;
-  projectLiveLink.href = project.linkToLiveProject;
-  projectSourceLink.href = project.linkToProjectSource;
+  projectLiveLink.setAttribute('href', project.linkToLiveProject);
+  projectLiveLink.setAttribute('target', '_blank');
+  projectSourceLink.setAttribute('href', project.linkToProjectSource);
+  projectSourceLink.setAttribute('target', '_blank');
 
   // display modal
   modal.style.display = 'block';

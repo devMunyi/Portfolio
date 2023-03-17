@@ -269,6 +269,10 @@ ul {
   padding: 0 16px 50px 16px;
 }
 
+#projects_area .flex-sect2 {
+  padding-bottom: 25px;
+}
+
 .grid-item {
   box-sizing: border-box;
   background-color: var(--white-bg);
@@ -276,7 +280,6 @@ ul {
   width: 100%;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding-bottom: 25px;
 }
 
 .mlr-16 {
@@ -285,15 +288,16 @@ ul {
 }
 
 .project_img {
-  margin-top: 16px;
+  /* margin-top: 16px;
   margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 16px; */
   border-radius: 8px;
   transition: transform 0.5s ease-out;
+  overflow: hidden;
 }
 
 .project_img:hover {
-  transform: scale(1.025);
+  transform: scale(1.008);
 }
 
 .modal-content .project_img {
@@ -359,15 +363,15 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .ptags {
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: 16px;
-  gap: 10px;
+  margin: 16px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
@@ -538,6 +542,7 @@ ul {
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-width: 150px;
 }
 
 .inner-item-right {
@@ -972,14 +977,14 @@ hr {
     position: relative;
     background-color: var(--white-bg);
     margin: 0 auto;
-  
+
     /* margin-bottom: 100px; */
     padding-bottom: 25px;
     width: 60%;
     border-radius: 15px;
     padding: 20px;
   }
-  
+
   .modal-content-wrapper {
     padding: 20px;
     height: calc(100vh - 150px);

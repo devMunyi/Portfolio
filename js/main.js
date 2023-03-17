@@ -176,7 +176,7 @@ function seeProjectDetails(projectIndex) {
     .map(
       (item, techIndex) => `
     <li class="wcat wcat${techIndex + 1}" id="tech-${techIndex + 1
-        }">${item}</li>
+}">${item}</li>
     `,
     )
     .join('');

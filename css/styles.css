@@ -331,9 +331,13 @@ ul {
 
 .modal-footer .btn {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  gap: 14px;
+  gap: 5px;
+  margin: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  width: 130px;
 }
 
 .modal-img-container {
@@ -667,6 +671,7 @@ hr {
   overflow-y: auto;
 }
 
+
 /* The Close Button */
 .close {
   color: #67798e;
@@ -702,6 +707,7 @@ hr {
 
 /* Begin Desktop Version CSS */
 @media screen and (min-width: 768px) {
+
   /* Begin Header Section */
   .header {
     background-color: #2929e9b8;
@@ -960,6 +966,25 @@ hr {
   }
 
   /* End Contact */
+
+  /* modal style for desktop screen */
+  .modal-content {
+    position: relative;
+    background-color: var(--white-bg);
+    margin: 0 auto;
+  
+    /* margin-bottom: 100px; */
+    padding-bottom: 25px;
+    width: 60%;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .modal-content-wrapper {
+    padding: 20px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
 }
 
 /* End Desktop Version CSS */

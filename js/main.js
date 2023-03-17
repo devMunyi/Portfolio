@@ -39,10 +39,10 @@ window.onclick = (event) => {
 
 const projects = [
   {
-    name: 'Book Doctor Appointment',
+    name: 'Doctor Appointment',
     tag: ['Micronaut', 'Software Developer Training', 2023],
     description:
-      'This application consist of a front end react app, that relies on a rails backend, to allow a user to book an appointments with a doctor, from the list of doctors available.',
+      'This application consists of a front-end react app, that relies on a rails backend, to allow a user to book an appointment with a doctor, from the list of doctors available.',
     featured_img: './img/capstone/doctors-booking.png',
     tech: ['ReactJs', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
     linkToLiveProject: 'https://devmunyi.github.io/booking-frontend/',
@@ -52,7 +52,7 @@ const projects = [
     name: 'CRYPTO METRICS',
     tag: ['Micronaut', 'Software Developer Training', 2023],
     description:
-      'This applications shows real-time data for cryptocurrencies current pricing and market activity. The data used is fetched from blockchain API.',
+      'The app shows real-time data for cryptocurrencies\' current pricing and market activity. The data used is fetched from blockchain API.',
     featured_img: './img/crytpo-metrics/cryptos.png',
     tech: ['JavaScript', 'ReactJs', 'Redux', 'External API'],
     linkToLiveProject: 'https://cryptocurrencies-metrics.netlify.app/',
@@ -62,7 +62,7 @@ const projects = [
     name: 'ZIDI',
     tag: ['Truweb Solutions', 'Software Developer', 2022],
     description:
-      'Zidi is a code sharing platform that aims to provide clean, universally acceptable code for all backend processes in all major languages. Anticipating to develop productivity tools for backend developers to make their work easier.',
+      'A code-sharing platform that aims to provide clean, universally acceptable code for all backend processes in all major languages. Anticipating to develop productivity tools for backend developers to make their work easier.',
     featured_img: './img/zidiapp/index.png',
     tech: ['NodeJs', 'jQuery', 'Bootstrap', 'MySQL'],
     linkToLiveProject: 'https://zidiapp.com/',
@@ -72,7 +72,7 @@ const projects = [
     name: 'Morning Dew',
     tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      'Morning Dew is online plaftom that allows visitors to book rooms and is integrated with stripe payment gateway.',
+      'An online platform that allows visitors to book rooms and is integrated with the stripe payment gateway. Implements authentication and authorization of users.',
     featured_img: 'img/morning-dew/index.png',
     tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
     linkToLiveProject: 'https://morning-dew.herokuapp.com/home',
@@ -83,7 +83,7 @@ const projects = [
     name: 'POS',
     tag: ['Freelancer', 'Software Developer', 2021],
     description:
-      'An online store admin panel that can be used to manage shop sales. Makes it possible to manages both Cash and Credit sales.',
+      'An online store admin panel that can be used to manage shop sales. Makes it possible to manages both Cash and Credit sales. Includes an admin dashboard and regular user dashboard.',
     featured_img: 'img/POS/index.png',
     tech: ['Vanilla JavaScript', 'JQuery', 'PHP', 'MySQL'],
     linkToLiveProject: 'https://apa-shop.herokuapp.com/dashboard',
@@ -93,7 +93,7 @@ const projects = [
     name: 'Todo List',
     tag: ['Microverse', 'Student', 2022],
     description:
-      'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+      'A tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     featured_img: 'img/todo-list/index.png',
     tech: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
     linkToLiveProject: 'https://devmunyi.github.io/todo-list/',
@@ -176,7 +176,7 @@ function seeProjectDetails(projectIndex) {
     .map(
       (item, techIndex) => `
     <li class="wcat wcat${techIndex + 1}" id="tech-${techIndex + 1
-        }">${item}</li>
+}">${item}</li>
     `,
     )
     .join('');
@@ -302,7 +302,6 @@ if (outerLists.length) {
         outerList.querySelector('.abt-cat-inner').style.flexWrap = 'wrap';
         outerList.querySelector('.abt-cat-inner').style.overflowX = 'auto';
         outerList.querySelector('.abt-cat-inner').style.maxWidth = '100%';
-
       }
     });
   });
@@ -311,10 +310,10 @@ if (outerLists.length) {
 const listItems = document.querySelectorAll('.desktop-nav .nav-flex-item');
 
 if (listItems.length) {
-  listItems.forEach(item => {
+  listItems.forEach((item) => {
     item.addEventListener('click', () => {
       // remove 'click-effect' class from all list items
-      listItems.forEach(li => li.classList.remove('click-effect'));
+      listItems.forEach((li) => li.classList.remove('click-effect'));
       // toggle 'click-effect' class on the clicked item
       item.classList.toggle('click-effect');
     });

@@ -1,419 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css?v1" />
-    <style></style>
-  </head>
-  <body>
-    <!-- Wrapper for both header and headline section -->
 
-    <header class="header">
-      <div class="mobile-menu">
-        <a class="logo link" href="#">
-          <img src="./img/logo.png" alt="LOGO">
-        </a>
-        <!-- Mobile nav -->
-        <div class="mobile-nav cursor-pointer">
-          <div class="hamburger bar-1"></div>
-          <div class="hamburger bar-2"></div>
-          <div class="hamburger bar-3"></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css?v1" />
+  <style></style>
+</head>
+
+<body>
+  <!-- Wrapper for both header and headline section -->
+
+  <header class="header">
+    <div class="mobile-menu">
+      <a class="logo link" href="#">
+        <img src="./img/logo.png" alt="LOGO">
+      </a>
+      <!-- Mobile nav -->
+      <div class="mobile-nav cursor-pointer">
+        <div class="hamburger bar-1"></div>
+        <div class="hamburger bar-2"></div>
+        <div class="hamburger bar-3"></div>
       </div>
-
-      <!-- Desktop nav -->
-      <nav class="desktop-nav">
-        <ul class="nav-flex">
-          <li class="nav-flex-item">
-            <a class="link" href="#">Home</a>
-          </li>
-          <li class="nav-flex-item">
-            <a class="link" href="#works">Projects</a>
-          </li>
-          <li class="nav-flex-item">
-            <a class="link" href="#about">About</a>
-          </li>
-          <li class="nav-flex-item">
-            <a class="link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="header-headline-wrapper">
-      <!-- header -->
-      <!-- header -->
-
-      <!-- Headline Section -->
-      <section id="headline-section" class="headline-section">
-        <h2 class="flex-item flex-item1">
-          I'm Samuel,<br />
-          glad to see you!
-        </h2>
-        <p class="flex-item flex-item2">
-          I'm a software developer! I can help you build a product , feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don't hestiate to contact
-          me.
-        </p>
-        <h2 class="flex-item flex-item3 connect-text">LET'S CONNECT</h2>
-        <!-- Social media icons -->
-        <ul class="social-media">
-          <li class="social-md social-md-4">
-            <a href="https://github.com/devMunyi"
-              ><img src="./img/social-media-icons/github.svg" alt="Github Icon"
-            /></a>
-          </li>
-          <li class="social-md social-md-2">
-            <a href="https://linkedin.com/in/samuel-munyi"
-              ><img
-                src="./img/social-media-icons/Linkedin.svg"
-                alt="LinkedIn Icon"
-            /></a>
-          </li>
-          <li class="social-md social-md-1">
-            <a href="https://twitter.com/munyi_sam"
-              ><img
-                src="./img/social-media-icons/twitter.svg"
-                alt="Twitter Icon"
-            /></a>
-          </li>
-        </ul>
-      </section>
     </div>
 
-    <!-- works section -->
-    <section id="works" class="works">
-      <h2 class="big-title text-center">My Recent Projects</h2>
-      <div id="projects_area">
+    <!-- Desktop nav -->
+    <nav class="desktop-nav">
+      <ul class="nav-flex">
+        <li class="nav-flex-item">
+          <a class="link" href="#">Home</a>
+        </li>
+        <li class="nav-flex-item">
+          <a class="link" href="#works">Projects</a>
+        </li>
+        <li class="nav-flex-item">
+          <a class="link" href="#about">About</a>
+        </li>
+        <li class="nav-flex-item">
+          <a class="link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header-headline-wrapper">
+    <!-- header -->
+    <!-- header -->
 
-      </div>
+    <!-- Headline Section -->
+    <section id="headline-section" class="headline-section">
+      <h2 class="flex-item flex-item1">
+        I'm Samuel,<br />
+        glad to see you!
+      </h2>
+      <p class="flex-item flex-item2">
+        Hello, I'm a software developer! I can help you build a product, feature or website Look through some of my work
+        and experience! If you like what you see and have a project you need to be coded, don't hesitate to contact me.
+      </p>
+      <h2 class="flex-item flex-item3 connect-text">LET'S CONNECT</h2>
+      <!-- Social media icons -->
+      <ul class="social-media">
+        <li class="social-md social-md-4">
+          <a href="https://github.com/devMunyi"><img src="./img/social-media-icons/github.svg" alt="Github Icon" /></a>
+        </li>
+        <li class="social-md social-md-2">
+          <a href="https://linkedin.com/in/samuel-munyi"><img src="./img/social-media-icons/Linkedin.svg"
+              alt="LinkedIn Icon" /></a>
+        </li>
+        <li class="social-md social-md-1">
+          <a href="https://twitter.com/munyi_sam"><img src="./img/social-media-icons/twitter.svg"
+              alt="Twitter Icon" /></a>
+        </li>
+      </ul>
     </section>
+  </div>
 
-    <!-- The Modal -->
-    <section id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2 id="project-name">Tonic</h2>
-        </div>
-        <ul class="ptags">
-          <li class="ptag ptag1" id="tag-1">CANOPY</li>
-          <li class="ptag ptag2"></li>
-          <li class="ptag ptag3" id="tag-2">Back End Dev</li>
-          <li class="ptag ptag4"></li>
-          <li class="ptag ptag5" id="tag-3">2015</li>
-        </ul>
-        <div class="modal-img-container">
-          <img
-            id="project-img"
-            src="img/project1_desktop_bg.png"
-            alt="Project on Tonic"
-          />
-        </div>
-        <div class="desktop-version-grid">
-          <p class="description p-description mlr-16" id="project-desc">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <div class="ul-footer-desktop">
-            <ul id="works-categories" class="works-categories"></ul>
-            <hr />
-            <div class="modal-footer">
-              <a id="live_url" href="#">
-                <button
-                  id="myBtn"
-                  type="submit"
-                  class="btn project-view-btn cursor-pointer"
-                >
-                  <span> See Live</span>
-                  <img
-                    src="./img/see-live.png"
-                    alt="See Live Project"
-                    width="26"
-                    height="26"
-                  /></button
-              ></a>
-              <a id="source_url" href="#">
-                <button
-                  id="myBtn"
-                  type="submit"
-                  class="btn project-view-btn cursor-pointer"
-                >
-                  <span>See Source</span>
-                  <img
-                    src="./img/see-source.png"
-                    alt="See Source Code"
-                    width="28"
-                    height="28"
-                  /></button
-              ></a>
-            </div>
+  <!-- works section -->
+  <section id="works" class="works">
+    <h2 class="big-title text-center">My Recent Projects</h2>
+    <div id="projects_area">
+
+    </div>
+  </section>
+
+  <!-- The Modal -->
+  <section id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="project-name">Tonic</h2>
+      </div>
+      <ul class="ptags">
+        <li class="ptag ptag1" id="tag-1">CANOPY</li>
+        <li class="ptag ptag2"></li>
+        <li class="ptag ptag3" id="tag-2">Back End Dev</li>
+        <li class="ptag ptag4"></li>
+        <li class="ptag ptag5" id="tag-3">2015</li>
+      </ul>
+      <div class="modal-img-container">
+        <img id="project-img" src="img/project1_desktop_bg.png" alt="Project on Tonic" />
+      </div>
+      <div class="desktop-version-grid">
+        <p class="description p-description mlr-16" id="project-desc">
+          A daily selection of privately personalized reads; no accounts or
+          sign-ups required.
+        </p>
+        <div class="ul-footer-desktop">
+          <ul id="works-categories" class="works-categories"></ul>
+          <hr />
+          <div class="modal-footer">
+            <a id="live_url" href="#">
+              <button id="myBtn" type="submit" class="btn project-view-btn cursor-pointer">
+                <span> See Live</span>
+                <img src="./img/see-live.png" alt="See Live Project" width="26" height="26" /></button></a>
+            <a id="source_url" href="#">
+              <button id="myBtn" type="submit" class="btn project-view-btn cursor-pointer">
+                <span>See Source</span>
+                <img src="./img/see-source.png" alt="See Source Code" width="28" height="28" /></button></a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Wrapper for both about and contact sections -->
-    <div class="about-contact-wrapper">
-      <!-- About Myself -->
-      <section id="about" class="about-myself">
-        <div class="about-flex__sect__left">
-          <h2 class="about-title">
-            About <br />
-            Myself
-          </h2>
-          <p class="description about-description">
-            Hello I'm a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don't
-            hestiate to contact me.
-          </p>
-          <h2 class="connect-text">LET'S CONNECT</h2>
-          <!-- Social media icons -->
-          <ul class="social-media-2">
-            <li class="social-md social-md-4">
-              <a href="https://github.com/devMunyi"
-                ><img
-                  src="./img/social-media-icons/github.svg"
-                  alt="Github Icon"
-              /></a>
-            </li>
-            <li class="social-md social-md-2">
-              <a href="https://linkedin.com/in/samuel-munyi"
-                ><img
-                  src="./img/social-media-icons/Linkedin.svg"
-                  alt="LinkedIn Icon"
-              /></a>
-            </li>
-            <!-- <li class="social-md social-md-5">
+  <!-- Wrapper for both about and contact sections -->
+  <div class="about-contact-wrapper">
+    <!-- About Myself -->
+    <section id="about" class="about-myself">
+      <div class="about-flex__sect__left">
+        <h2 class="about-title">
+          About <br />
+          Myself
+        </h2>
+        <p class="description about-description">
+          As a Multidisciplinary Software Developer, I possess extensive hands-on experience in developing responsive, dynamic, and high-performant applications using various technologies. These include JavaScript, jQuery, React, Redux, NextJs, NodeJs, Express, Ruby, Ruby on Rails, PHP, Laravel, Python, Django, Java, Spring Boot, React Native, Flutter, PostgreSQL, MySQL, and MongoDB. In addition to my technical skills, I also possess exceptional soft skills. These include time management, expectation handling, working under pressure to meet deadlines, great communication skills, fluency in English, the ability to acquire new technical skills in a short period, and remote collaboration through pair programming.
+        <h2 class="connect-text">LET'S CONNECT</h2>
+        <!-- Social media icons -->
+        <ul class="social-media-2">
+          <li class="social-md social-md-4">
+            <a href="https://github.com/devMunyi"><img src="./img/social-media-icons/github.svg"
+                alt="Github Icon" /></a>
+          </li>
+          <li class="social-md social-md-2">
+            <a href="https://linkedin.com/in/samuel-munyi"><img src="./img/social-media-icons/Linkedin.svg"
+                alt="LinkedIn Icon" /></a>
+          </li>
+          <!-- <li class="social-md social-md-5">
               <a href="#"
                 ><img
                   src="./img/social-media-icons/f_.svg"
                   alt="Social Media Icon"
               /></a>
             </li> -->
-            <li class="social-md social-md-1">
-              <a href="https://twitter.com/munyi_sam"
-                ><img
-                  src="./img/social-media-icons/twitter.svg"
-                  alt="Twitter Icon"
-              /></a>
-            </li>
-            <!-- <li class="social-md social-md-3">
+          <li class="social-md social-md-1">
+            <a href="https://twitter.com/munyi_sam"><img src="./img/social-media-icons/twitter.svg"
+                alt="Twitter Icon" /></a>
+          </li>
+          <!-- <li class="social-md social-md-3">
               <a href="#"
                 ><img
                   src="./img/social-media-icons/m_.svg"
                   alt="Social Media Icon"
               /></a>
             </li> -->
-          </ul>
-          <a href="https://drive.google.com/file/d/1cnr5fNGfQe36cSev0D7XgxnpPdSeeGRU/view?usp=share_link">
-            <button type="submit" class="btn resume-btn cursor-pointer">
-              Get my resume
-            </button>
-          </a>
-        </div>
-        <div class="about-flex__sect__right">
-          <ul class="abt-cat-outer">
-            <li class="outer-list active-list">
-              <span class="abt-cat abt-cat1 active-list-item"
-                ><span class="outer-item-left">Languages</span
-                ><span class="outer-item-right"
-                  ><img src="./img/down_arrow.svg" class="cursor-pointer" alt="Down icon" /></span
-              ></span>
-              <ul class="abt-cat-inner">
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/js.png"
-                    alt="JavaScript"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">JavaScript</span>
-                </li>
-                <li class="abt-cat-inner-item abt-cat-inner-item2">
-                  <img
-                    src="./img/nodejs.png"
-                    alt="NodeJs"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">NodeJs</span>
-                </li>
-                <li class="abt-cat-inner-item abt-cat-inner-item3">
-                  <img
-                    src="./img/php.png"
-                    alt="PHP Programming"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">PHP</span>
-                </li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1cnr5fNGfQe36cSev0D7XgxnpPdSeeGRU/view?usp=share_link">
+          <button type="submit" class="btn resume-btn cursor-pointer">
+            Get my resume
+          </button>
+        </a>
+      </div>
+      <div class="about-flex__sect__right">
+        <ul class="abt-cat-outer">
+          <li class="outer-list active-list">
+            <span class="abt-cat abt-cat1 active-list-item"><span class="outer-item-left">Languages</span><span
+                class="outer-item-right"><img src="./img/down_arrow.svg" class="cursor-pointer"
+                  alt="Down icon" /></span></span>
+            <ul class="abt-cat-inner">
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/js.png" alt="JavaScript" class="inner-item-left" />
+                <span class="inner-item-right">JavaScript</span>
+              </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item2">
+                <img src="./img/nodejs.png" alt="NodeJs" class="inner-item-left" />
+                <span class="inner-item-right">NodeJs</span>
+              </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item3">
+                <img src="./img/php.png" alt="PHP Programming" class="inner-item-left" />
+                <span class="inner-item-right">PHP</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item3">
-                  <img
-                    src="./img/ruby.png"
-                    alt="CSS Icon"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Ruby</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item3">
+                <img src="./img/ruby.png" alt="CSS Icon" class="inner-item-left" />
+                <span class="inner-item-right">Ruby</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item3">
-                  <img
-                    src="./img/python.png"
-                    alt="Python Programming"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Python</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item3">
+                <img src="./img/python.png" alt="Python Programming" class="inner-item-left" />
+                <span class="inner-item-right">Python</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item3">
-                  <img
-                    src="./img/java.png"
-                    alt="Java Programming"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Java</span>
-                </li>
-              </ul>
-            </li>
-            <li class="outer-list">
-              <span class="abt-cat abt-cat2">
-                <span class="outer-item-left">Frameworks</span
-                ><span class="outer-item-right"
-                  ><img src="./img/forward_arrow.svg" alt="Forward Icon"
-                /></span>
-              </span>
-              <ul class="abt-cat-inner d-none">
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/react.png"
-                    alt="React"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">ReactJs</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item3">
+                <img src="./img/java.png" alt="Java Programming" class="inner-item-left" />
+                <span class="inner-item-right">Java</span>
+              </li>
+            </ul>
+          </li>
+          <li class="outer-list">
+            <span class="abt-cat abt-cat2">
+              <span class="outer-item-left">Frameworks</span><span class="outer-item-right"><img
+                  src="./img/forward_arrow.svg" alt="Forward Icon" /></span>
+            </span>
+            <ul class="abt-cat-inner d-none">
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/react.png" alt="React" class="inner-item-left" />
+                <span class="inner-item-right">ReactJs</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/nextjs.png"
-                    alt="NextJs"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">NextJs</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/nextjs.png" alt="NextJs" class="inner-item-left" />
+                <span class="inner-item-right">NextJs</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/rails.png"
-                    alt="JavaScript Icon"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Ruby on Rails</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/rails.png" alt="JavaScript Icon" class="inner-item-left" />
+                <span class="inner-item-right">Ruby on Rails</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/laravel.png"
-                    alt="Laravel"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Laravel</span>
-                </li>
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/spring-boot.png"
-                    alt="Spring Boot"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Spring Boot</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/laravel.png" alt="Laravel" class="inner-item-left" />
+                <span class="inner-item-right">Laravel</span>
+              </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/spring-boot.png" alt="Spring Boot" class="inner-item-left" />
+                <span class="inner-item-right">Spring Boot</span>
+              </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/django.png"
-                    alt="Django"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Django</span>
-                </li>
-              </ul>
-            </li>
-            
-            <li class="outer-list">
-              <span class="abt-cat abt-cat2">
-                <span class="outer-item-left">Databases</span
-                ><span class="outer-item-right"
-                  ><img src="./img/forward_arrow.svg" alt="Forward Icon"
-                /></span>
-              </span>
-              <ul class="abt-cat-inner d-none">
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/psql.svg"
-                    alt="PostgreSQL"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">PostgreSQL</span>
-                </li>
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/mysql.png"
-                    alt="MySQL"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">MySQL</span>
-                </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/django.png" alt="Django" class="inner-item-left" />
+                <span class="inner-item-right">Django</span>
+              </li>
+            </ul>
+          </li>
 
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/mongodb.jpg"
-                    alt="MongoDB"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">MongoDB</span>
-                </li>
-              </ul>
-            </li>
+          <li class="outer-list">
+            <span class="abt-cat abt-cat2">
+              <span class="outer-item-left">Databases</span><span class="outer-item-right"><img
+                  src="./img/forward_arrow.svg" alt="Forward Icon" /></span>
+            </span>
+            <ul class="abt-cat-inner d-none">
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/psql.svg" alt="PostgreSQL" class="inner-item-left" />
+                <span class="inner-item-right">PostgreSQL</span>
+              </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/mysql.png" alt="MySQL" class="inner-item-left" />
+                <span class="inner-item-right">MySQL</span>
+              </li>
 
-            <li class="outer-list">
-              <span class="abt-cat abt-cat2">
-                <span class="outer-item-left">Mobile Apps</span
-                ><span class="outer-item-right"
-                  ><img src="./img/forward_arrow.svg" alt="Forward Icon"
-                /></span>
-              </span>
-              <ul class="abt-cat-inner d-none">
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/react-native.png"
-                    alt="React Native"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">React Native</span>
-                </li>
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/flutter.png"
-                    alt="Flutter"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Flutter</span>
-                </li>
-                <li class="abt-cat-inner-item abt-cat-inner-item1">
-                  <img
-                    src="./img/java.png"
-                    alt="Java"
-                    class="inner-item-left"
-                  />
-                  <span class="inner-item-right">Java Android</span>
-                </li>
-              </ul>
-            </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/mongodb.jpg" alt="MongoDB" class="inner-item-left" />
+                <span class="inner-item-right">MongoDB</span>
+              </li>
+            </ul>
+          </li>
 
-            <!-- <li class="outer-list">
+          <li class="outer-list">
+            <span class="abt-cat abt-cat2">
+              <span class="outer-item-left">Mobile Apps</span><span class="outer-item-right"><img
+                  src="./img/forward_arrow.svg" alt="Forward Icon" /></span>
+            </span>
+            <ul class="abt-cat-inner d-none">
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/react-native.png" alt="React Native" class="inner-item-left" />
+                <span class="inner-item-right">React Native</span>
+              </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/flutter.png" alt="Flutter" class="inner-item-left" />
+                <span class="inner-item-right">Flutter</span>
+              </li>
+              <li class="abt-cat-inner-item abt-cat-inner-item1">
+                <img src="./img/java.png" alt="Java" class="inner-item-left" />
+                <span class="inner-item-right">Java Android</span>
+              </li>
+            </ul>
+          </li>
+
+          <!-- <li class="outer-list">
               <span class="abt-cat abt-cat3">
                 <span class="outer-item-left">Skills</span
                 ><span class="outer-item-right"
@@ -439,68 +314,37 @@
                 </li>
               </ul>
             </li> -->
-          </ul>
-        </div>
-      </section>
+        </ul>
+      </div>
+    </section>
 
-      <!-- Add Contact Form -->
-      <section id="contact" class="contact">
-        <h2 class="contact-title">Contact me</h2>
-        <p class="contact-decription">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-        <form
-          id="contact-form"
-          class="contact-form"
-          action="https://formspree.io/f/xnqrnpng"
-          method="post"
-        >
-          <label for="user_name">
-            <input
-              onchange="populateStorage()"
-              class="input username-input"
-              type="text"
-              name="user_name"
-              id="user_name"
-              maxlength="30"
-              placeholder="Fullname"
-              required
-            />
-            <br />
-          </label>
-          <label for="user_email">
-            <small id="email_msg" class="error"></small>
-            <input
-              onchange="populateStorage()"
-              class="input email-input"
-              type="email"
-              name="user_email"
-              id="user_email"
-              required
-              placeholder="Email Address"
-            />
-            <br />
-          </label>
-          <label for="message">
-            <textarea
-              onchange="populateStorage()"
-              class="input"
-              placeholder="Write your message here..."
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              required
-            ></textarea
-            ><br />
-          </label>
-          <button type="submit" class="contact-btn btn">Get In Touch</button>
-        </form>
-      </section>
-    </div>
-    <script src="./js/main.js"></script>
-  </body>
+    <!-- Add Contact Form -->
+    <section id="contact" class="contact">
+      <h2 class="contact-title">Contact me</h2>
+      <p class="contact-decription">
+        If you have an application you are interested in developing, a feature that you need built, or a project that needs coding. I’d love to help with it.
+      </p>
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xnqrnpng" method="post">
+        <label for="user_name">
+          <input onchange="populateStorage()" class="input username-input" type="text" name="user_name" id="user_name"
+            maxlength="30" placeholder="Fullname" required />
+          <br />
+        </label>
+        <label for="user_email">
+          <small id="email_msg" class="error"></small>
+          <input onchange="populateStorage()" class="input email-input" type="email" name="user_email" id="user_email"
+            required placeholder="Email Address" />
+          <br />
+        </label>
+        <label for="message">
+          <textarea onchange="populateStorage()" class="input" placeholder="Write your message here..." name="message"
+            id="message" cols="30" rows="10" maxlength="500" required></textarea><br />
+        </label>
+        <button type="submit" class="contact-btn btn">Get In Touch</button>
+      </form>
+    </section>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

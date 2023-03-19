@@ -76,7 +76,7 @@ const projects = [
     featured_img: 'img/morning-dew/index.png',
     tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
     linkToLiveProject: 'https://main--dancing-taiyaki-c4c009.netlify.app/',
-    linkToProjectSource: 'https://github.com/devMunyi/morning-dew',
+    linkToProjectSource: 'https://github.com/devMunyi/morning-dew-frontend',
   },
 
   {

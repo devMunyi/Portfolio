@@ -75,7 +75,7 @@ const projects = [
       'An online platform that allows visitors to book rooms and is integrated with the stripe payment gateway. Implements authentication and authorization of users.',
     featured_img: 'img/morning-dew/index.png',
     tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
-    linkToLiveProject: 'https://morning-dew.herokuapp.com/home',
+    linkToLiveProject: 'https://main--dancing-taiyaki-c4c009.netlify.app/',
     linkToProjectSource: 'https://github.com/devMunyi/morning-dew',
   },
 

@@ -77,28 +77,7 @@ const projects = [
     tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
     linkToLiveProject: 'https://main--dancing-taiyaki-c4c009.netlify.app/',
     linkToProjectSource: 'https://github.com/devMunyi/morning-dew-frontend',
-  },
-
-  {
-    name: 'POS',
-    tag: ['Freelancer', 'Software Developer', 2021],
-    description:
-      'An online store admin panel that can be used to manage shop sales. Makes it possible to manages both Cash and Credit sales. Includes an admin dashboard and regular user dashboard.',
-    featured_img: 'img/POS/index.png',
-    tech: ['Vanilla JavaScript', 'JQuery', 'PHP', 'MySQL'],
-    linkToLiveProject: 'https://apa-shop.herokuapp.com/dashboard',
-    linkToProjectSource: 'https://github.com/devMunyi/POS',
-  },
-  {
-    name: 'Todo List',
-    tag: ['Microverse', 'Student', 2022],
-    description:
-      'A tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
-    featured_img: 'img/todo-list/index.png',
-    tech: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
-    linkToLiveProject: 'https://devmunyi.github.io/todo-list/',
-    linkToProjectSource: 'https://github.com/devMunyi/todo-list',
-  },
+  }
 ];
 
 const displayProjectsOnUI = () => {

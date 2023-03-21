@@ -38,25 +38,26 @@ window.onclick = (event) => {
 };
 
 const projects = [
+
   {
-    name: 'Doctor Appointment',
+    name: 'Morning Dew',
+    tag: ['Freelancer', 'Software Developer', 2021],
+    description:
+      'An online platform that allows visitors to book rooms and is integrated with the stripe payment gateway. Implements authentication and authorization of users.',
+    featured_img: 'img/morning-dew/index.png',
+    tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
+    linkToLiveProject: 'https://morning-dew.netlify.app/',
+    linkToProjectSource: 'https://github.com/devMunyi/morning-dew-frontend',
+  },
+  {
+    name: 'DocBooker',
     tag: ['Micronaut', 'Software Developer Training', 2023],
     description:
       'This application consists of a front-end react app, that relies on a rails backend, to allow a user to book an appointment with a doctor, from the list of doctors available.',
     featured_img: './img/capstone/doctors-booking.png',
     tech: ['ReactJs', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
-    linkToLiveProject: 'https://main--glittering-beignet-46c582.netlify.app/',
+    linkToLiveProject: 'https://book-doc-appointment.netlify.app/',
     linkToProjectSource: 'https://github.com/devMunyi/booking-frontend',
-  },
-  {
-    name: 'CRYPTO METRICS',
-    tag: ['Micronaut', 'Software Developer Training', 2023],
-    description:
-      'The app shows real-time data for cryptocurrencies\' current pricing and market activity. The data used is fetched from blockchain API.',
-    featured_img: './img/crytpo-metrics/cryptos.png',
-    tech: ['JavaScript', 'ReactJs', 'Redux', 'External API'],
-    linkToLiveProject: 'https://cryptocurrencies-metrics.netlify.app/',
-    linkToProjectSource: 'https://github.com/devMunyi/crypto-metrics',
   },
   {
     name: 'ZIDI',
@@ -69,15 +70,35 @@ const projects = [
     linkToProjectSource: 'https://github.com/devMunyi/zidi-app',
   },
   {
-    name: 'Morning Dew',
-    tag: ['Freelancer', 'Software Developer', 2021],
+    name: 'CRYPTO METRICS',
+    tag: ['Micronaut', 'Software Developer Training', 2023],
     description:
-      'An online platform that allows visitors to book rooms and is integrated with the stripe payment gateway. Implements authentication and authorization of users.',
-    featured_img: 'img/morning-dew/index.png',
-    tech: ['ReactJs', 'NodeJs', 'MongoDB', 'Bootstrap'],
-    linkToLiveProject: 'https://main--dancing-taiyaki-c4c009.netlify.app/',
-    linkToProjectSource: 'https://github.com/devMunyi/morning-dew-frontend',
-  }
+      'The app shows real-time data for cryptocurrencies\' current pricing and market activity. The data used is fetched from blockchain API.',
+    featured_img: './img/crytpo-metrics/cryptos.png',
+    tech: ['JavaScript', 'ReactJs', 'Redux', 'External API'],
+    linkToLiveProject: 'https://cryptocurrencies-metrics.netlify.app/',
+    linkToProjectSource: 'https://github.com/devMunyi/crypto-metrics',
+  },
+  // {
+  //   name: 'POS',
+  //   tag: ['Freelancer', 'Software Developer', 2021],
+  //   description:
+  //     'An online store admin panel that can be used to manage shop sales. Makes it possible to manages both Cash and Credit sales. Includes an admin dashboard and regular user dashboard.',
+  //   featured_img: 'img/POS/index.png',
+  //   tech: ['Vanilla JavaScript', 'JQuery', 'PHP', 'MySQL'],
+  //   linkToLiveProject: 'https://apa-shop.herokuapp.com/dashboard',
+  //   linkToProjectSource: 'https://github.com/devMunyi/POS',
+  // },
+  // {
+  //   name: 'Todo List',
+  //   tag: ['Microverse', 'Student', 2022],
+  //   description:
+  //     'A tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+  //   featured_img: 'img/todo-list/index.png',
+  //   tech: ['JavaScript', 'HTML', 'CSS', 'Webpack'],
+  //   linkToLiveProject: 'https://devmunyi.github.io/todo-list/',
+  //   linkToProjectSource: 'https://github.com/devMunyi/todo-list',
+  // },
 ];
 
 const displayProjectsOnUI = () => {

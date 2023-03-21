@@ -57,7 +57,7 @@ const projects = [
     featured_img: './img/capstone/doctors-booking.png',
     tech: ['ReactJs', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
     linkToLiveProject: 'https://book-doc-appointment.netlify.app/',
-    linkToProjectSource: 'https://github.com/devMunyi/booking-frontend',
+    linkToProjectSource: 'https://github.com/devMunyi/DocBooker-frontend',
   },
   {
     name: 'ZIDI',

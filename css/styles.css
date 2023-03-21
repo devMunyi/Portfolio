@@ -5,17 +5,17 @@
   --white-bg: #fff;
   --white-border: 1px solid #fff;
   --white-text: #fff;
-  --dark-text: #000;
+  --dark-text: #172b4d;
   --blue-text: #396df2;
   --blue-bg: #396df2;
   --blue-border: 1px solid#396df2;
-  --skyblue-bg: #6070ff;
-  --skyblue-text: hsl(234, 90%, 49%);
+  --blue-bg: #6070ff;
+  /* --blue-text: hsl(234, 90%, 49%); */
   --font-weight-700: 700;
   --font-weight-600: 600;
   --font-weight-500: 500;
   --body-bg: #e5e5e5;
-  --dark-border: #000;
+  --dark-border: #172b4d;
 }
 
 html {
@@ -83,7 +83,6 @@ ul {
   .mobile-nav {
     padding: 1.5rem;
     z-index: 1000;
-    background: transparent;
     border: none;
     cursor: pointer;
   }
@@ -91,7 +90,7 @@ ul {
   .hamburger {
     width: 40px;
     height: 5px;
-    background-color: var(--skyblue-bg);
+    background-color: var(--blue-bg);
     margin: 6px 0;
     transition: 0.4ms ease-in-out;
   }
@@ -107,7 +106,7 @@ ul {
     left: 0;
     right: 0;
     z-index: 100;
-    background: #797c9dd9;
+    background: var(--blue-bg);
     transition: transform 250ms ease-in-out;
     display: flex;
     flex-direction: column;
@@ -167,7 +166,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #172b4d;
+  color: var(--dark-text);
   background-image: url("../img/shapes-mobile-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -184,7 +183,7 @@ ul {
   font-weight: var(--font-weight-700);
   font-size: 18px;
   line-height: 20px;
-  color: var(--skyblue-text);
+  color: var(--blue-text);
   text-align: center;
 
   /* animation: rotation 1s 1 linear;
@@ -254,7 +253,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--skyblue-text);
+    color: var(--blue-text);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -362,7 +361,7 @@ ul {
   font-weight: var(--font-weight-700);
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  color: var(--dark-text);
   margin-bottom: 0;
 }
 
@@ -451,7 +450,7 @@ ul {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: var(--skyblue-text);
+  color: var(--blue-text);
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
@@ -461,10 +460,19 @@ ul {
   margin-left: 16px;
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--skyblue-bg);
-  color: var(--dark-text);
+#myModal .btn:hover,
+#works .btn:hover,
+#myModal .btn:hover,
+#works .btn:focus {
+  background-color: var(--blue-bg);
+  color: var(--white-text);
+}
+
+
+#about .btn:hover,
+#about .btn:focus {
+  background-color: var(--blue-bg);
+  color: var(--white-text);
 }
 
 .contact-btn:hover,
@@ -494,7 +502,7 @@ ul {
   font-weight: var(--font-weight-700);
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
+  color: var(--dark-text);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -579,7 +587,7 @@ hr {
 
 /* Begin Contact Section */
 .contact {
-  background: var(--skyblue-bg);
+  background: var(--blue-bg);
   border-top-left-radius: 75px;
   padding-left: 24px;
   padding-right: 24px;
@@ -633,7 +641,7 @@ hr {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  color: #172b4d;
+  color: var(--dark-text);
 }
 
 .message-input {
@@ -694,7 +702,7 @@ hr {
 
 .modal-header {
   padding: 2px 32px;
-  color: #172b4d;
+  color: var(--dark-text);
 }
 
 .modal-content hr {
@@ -746,6 +754,15 @@ hr {
 
   .link:hover {
     background-color: var(--body-bg);
+    color: var(--dark-text);
+  }
+
+  .svg-icon {
+    width: 32px;
+    color: var(--white-text);
+  }
+
+  .svg-icon:hover {
     color: var(--dark-text);
   }
 
@@ -896,7 +913,7 @@ hr {
     background-position: right;
 
     /* fallback color incase background image not available */
-    background-color: #2929e9b8;
+    background-color: var(--blue-bg);
   }
 
   .contact-btn {

@@ -753,7 +753,7 @@ hr {
   }
 
   .link:hover {
-    background-color: var(--body-bg);
+    background-color: var(--white-bg);
     color: var(--dark-text);
   }
 

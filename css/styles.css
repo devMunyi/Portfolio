@@ -760,9 +760,11 @@ hr {
   .svg-icon {
     width: 32px;
     color: var(--white-text);
+    padding: 5px;
   }
 
-  .svg-icon:hover {
+  .logo:hover .svg-icon {
+    background-color: var(--white-bg);
     color: var(--dark-text);
   }
 

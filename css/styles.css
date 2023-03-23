@@ -7,8 +7,8 @@
   --white-text: #fff;
   --dark-text: #172b4d;
   --blue-text: #084bf7;;
-  --blue-bg: #396df2;
-  --blue-border: 1px solid#396df2;
+  --blue-bg: #084bf7;
+  --blue-border: 1px solid #084bf7;
 
   /* --blue-text: hsl(234, 90%, 49%); */
   --font-weight-700: 700;
@@ -615,7 +615,7 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #f6f6fb;
+  color: var(--white-text);
 }
 
 .contact-form {

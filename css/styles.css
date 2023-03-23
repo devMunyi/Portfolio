@@ -6,10 +6,10 @@
   --white-border: 1px solid #fff;
   --white-text: #fff;
   --dark-text: #172b4d;
-  --blue-text: #396df2;
+  --blue-text: #084bf7;;
   --blue-bg: #396df2;
   --blue-border: 1px solid#396df2;
-  --blue-bg: #6070ff;
+
   /* --blue-text: hsl(234, 90%, 49%); */
   --font-weight-700: 700;
   --font-weight-600: 600;
@@ -378,7 +378,7 @@ ul {
   font-weight: var(--font-weight-600);
   font-size: 13px;
   line-height: 16px;
-  color: #344563;
+  color: var(--dark-text);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -411,6 +411,7 @@ ul {
 .ptag {
   font-size: 13px;
   line-height: 16px;
+  color: var(--dark-text) !important;
 }
 
 .ptag2,
@@ -424,12 +425,12 @@ ul {
 .ptag3,
 .ptag5 {
   font-weight: var(--font-weight-600);
-  color: #7a869a;
+  color: var(--dark-text);
 }
 
 .description {
   font-weight: 400;
-  color: #344563;
+  color: var(--dark-text);
   line-height: 24px;
 }
 
@@ -451,7 +452,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--blue-text);
-  background-color: #ebebff;
+  background-color: #f6f6fb;
   padding: 4px 12px;
   border-radius: 8px;
 }
@@ -462,12 +463,11 @@ ul {
 
 #myModal .btn:hover,
 #works .btn:hover,
-#myModal .btn:hover,
+#myModal .btn:focus,
 #works .btn:focus {
   background-color: var(--blue-bg);
   color: var(--white-text);
 }
-
 
 #about .btn:hover,
 #about .btn:focus {
@@ -517,7 +517,7 @@ ul {
 
 .connect-text {
   font-weight: var(--font-weight-500);
-  color: #7f8cff;
+  color: var(--dark-text);
   font-size: 16px;
   line-height: 24px;
 }
@@ -558,7 +558,7 @@ ul {
   font-size: 15px;
   line-height: 20px;
   margin-left: 20px;
-  color: #253858;
+  color: var(--dark-text);
 }
 
 hr {
@@ -615,7 +615,7 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #ebebff;
+  color: #f6f6fb;
 }
 
 .contact-form {
@@ -720,7 +720,6 @@ hr {
 
 /* Begin Desktop Version CSS */
 @media screen and (min-width: 768px) {
-
   /* Begin Header Section */
   .header {
     background-color: #2929e9b8;
@@ -896,7 +895,7 @@ hr {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 0;
-    color: #253858;
+    color: var(--dark-text);
   }
 
   .inner-item-left {
@@ -997,9 +996,6 @@ hr {
     position: relative;
     background-color: var(--white-bg);
     margin: 0 auto;
-
-    /* margin-bottom: 100px; */
-    padding-bottom: 25px;
     width: 60%;
     border-radius: 15px;
     padding: 20px;
